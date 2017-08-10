@@ -1,0 +1,1490 @@
+2017-08-09 21:43:51,474 p=6506 u=root |   
+2017-08-09 21:43:51,474 p=6506 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:43:51,474 p=6506 u=root |   
+2017-08-09 21:43:51,482 p=6506 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:43:51,482 p=6506 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:43:52,190 p=6506 u=root |  ok: [localhost]
+2017-08-09 21:43:52,190 p=6506 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:43:52,910 p=6506 u=root |  ok: [localhost]
+2017-08-09 21:43:52,910 p=6506 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 21:43:57,093 p=6506 u=root |  ok: [localhost]
+2017-08-09 21:43:57,094 p=6506 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:43:57,094 p=6506 u=root |  localhost                  : ok=3    changed=0    unreachable=0    failed=0   
+2017-08-09 21:45:18,418 p=8331 u=root |   
+2017-08-09 21:45:18,418 p=8331 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:45:18,418 p=8331 u=root |   
+2017-08-09 21:45:18,427 p=8331 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:45:18,428 p=8331 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:45:18,984 p=8331 u=root |  ok: [localhost]
+2017-08-09 21:45:18,985 p=8331 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:45:19,720 p=8331 u=root |  ok: [localhost]
+2017-08-09 21:45:19,721 p=8331 u=root |  TASK: [debug msg="{{ repo_log.stdout }}"] ************************************* 
+2017-08-09 21:45:19,724 p=8331 u=root |  fatal: [localhost] => One or more undefined variables: 'dict object' has no attribute 'stdout'
+2017-08-09 21:45:19,724 p=8331 u=root |  FATAL: all hosts have already failed -- aborting
+2017-08-09 21:45:19,725 p=8331 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:45:19,725 p=8331 u=root |             to retry, use: --limit @/root/debian8_new_machine_upgrade.retry
+
+2017-08-09 21:45:19,725 p=8331 u=root |  localhost                  : ok=2    changed=0    unreachable=1    failed=0   
+2017-08-09 21:45:31,560 p=8429 u=root |   
+2017-08-09 21:45:31,560 p=8429 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:45:31,560 p=8429 u=root |   
+2017-08-09 21:45:31,569 p=8429 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:45:31,569 p=8429 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:45:32,200 p=8429 u=root |  ok: [localhost]
+2017-08-09 21:45:32,201 p=8429 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:45:32,870 p=8429 u=root |  ok: [localhost]
+2017-08-09 21:45:32,871 p=8429 u=root |  TASK: [debug msg="{{ repolog.stdout }}"] ************************************** 
+2017-08-09 21:45:32,875 p=8429 u=root |  fatal: [localhost] => One or more undefined variables: 'dict object' has no attribute 'stdout'
+2017-08-09 21:45:32,876 p=8429 u=root |  FATAL: all hosts have already failed -- aborting
+2017-08-09 21:45:32,876 p=8429 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:45:32,877 p=8429 u=root |             to retry, use: --limit @/root/debian8_new_machine_upgrade.retry
+
+2017-08-09 21:45:32,877 p=8429 u=root |  localhost                  : ok=2    changed=0    unreachable=1    failed=0   
+2017-08-09 21:45:50,876 p=8580 u=root |   
+2017-08-09 21:45:50,876 p=8580 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:45:50,876 p=8580 u=root |   
+2017-08-09 21:45:50,885 p=8580 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:45:50,885 p=8580 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:45:51,605 p=8580 u=root |  ok: [localhost]
+2017-08-09 21:45:51,605 p=8580 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:45:52,236 p=8580 u=root |  ok: [localhost]
+2017-08-09 21:45:52,239 p=8580 u=root |  TASK: [debug msg="{{ repolog }}"] ********************************************* 
+2017-08-09 21:45:52,243 p=8580 u=root |  ok: [localhost] => {
+    "msg": "{'invocation': {'module_name': u'apt', 'module_args': u'package=repodeb8-debian-updates'}, u'changed': False}"
+}
+2017-08-09 21:45:52,243 p=8580 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 21:45:56,598 p=8580 u=root |  ok: [localhost]
+2017-08-09 21:45:56,599 p=8580 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:45:56,599 p=8580 u=root |  localhost                  : ok=4    changed=0    unreachable=0    failed=0   
+2017-08-09 21:46:28,049 p=9502 u=root |   
+2017-08-09 21:46:28,049 p=9502 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:46:28,049 p=9502 u=root |   
+2017-08-09 21:46:28,057 p=9502 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:46:28,058 p=9502 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:46:28,648 p=9502 u=root |  ok: [localhost]
+2017-08-09 21:46:28,648 p=9502 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:46:29,263 p=9502 u=root |  ok: [localhost]
+2017-08-09 21:46:29,265 p=9502 u=root |  TASK: [debug msg="{{ repolog.stdout_lines }}"] ******************************** 
+2017-08-09 21:46:29,267 p=9502 u=root |  fatal: [localhost] => One or more undefined variables: 'dict object' has no attribute 'stdout_lines'
+2017-08-09 21:46:29,267 p=9502 u=root |  FATAL: all hosts have already failed -- aborting
+2017-08-09 21:46:29,267 p=9502 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:46:29,267 p=9502 u=root |             to retry, use: --limit @/root/debian8_new_machine_upgrade.retry
+
+2017-08-09 21:46:29,267 p=9502 u=root |  localhost                  : ok=2    changed=0    unreachable=1    failed=0   
+2017-08-09 21:46:49,569 p=9644 u=root |   
+2017-08-09 21:46:49,569 p=9644 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:46:49,569 p=9644 u=root |   
+2017-08-09 21:46:49,578 p=9644 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:46:49,578 p=9644 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:46:50,301 p=9644 u=root |  ok: [localhost]
+2017-08-09 21:46:50,302 p=9644 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:46:51,020 p=9644 u=root |  ok: [localhost]
+2017-08-09 21:46:51,021 p=9644 u=root |  TASK: [debug var="{{ out.stdout_lines }}"] ************************************ 
+2017-08-09 21:46:51,026 p=9644 u=root |  fatal: [localhost] => One or more undefined variables: 'dict object' has no attribute 'stdout_lines'
+2017-08-09 21:46:51,026 p=9644 u=root |  FATAL: all hosts have already failed -- aborting
+2017-08-09 21:46:51,026 p=9644 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:46:51,027 p=9644 u=root |             to retry, use: --limit @/root/debian8_new_machine_upgrade.retry
+
+2017-08-09 21:46:51,027 p=9644 u=root |  localhost                  : ok=2    changed=0    unreachable=1    failed=0   
+2017-08-09 21:48:06,322 p=11398 u=root |  
+2017-08-09 21:48:06,322 p=11398 u=root |  /usr/bin/ansible --version
+2017-08-09 21:48:06,322 p=11398 u=root |  
+2017-08-09 21:48:48,485 p=11581 u=root |  
+2017-08-09 21:48:48,485 p=11581 u=root |  /usr/bin/ansible --version
+2017-08-09 21:48:48,485 p=11581 u=root |  
+2017-08-09 21:50:28,881 p=13394 u=root |   
+2017-08-09 21:50:28,881 p=13394 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:50:28,881 p=13394 u=root |   
+2017-08-09 21:50:28,890 p=13394 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:50:28,890 p=13394 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:50:29,662 p=13394 u=root |  ok: [localhost]
+2017-08-09 21:50:29,663 p=13394 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:50:30,350 p=13394 u=root |  ok: [localhost]
+2017-08-09 21:50:30,350 p=13394 u=root |  TASK: [debug ] **************************************************************** 
+2017-08-09 21:50:30,351 p=13394 u=root |  ok: [localhost] => {
+    "msg": "biteme"
+}
+2017-08-09 21:50:30,352 p=13394 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 21:50:34,770 p=13394 u=root |  ok: [localhost]
+2017-08-09 21:50:34,770 p=13394 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:50:34,770 p=13394 u=root |  localhost                  : ok=4    changed=0    unreachable=0    failed=0   
+2017-08-09 21:51:02,665 p=14316 u=root |   
+2017-08-09 21:51:02,665 p=14316 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:51:02,665 p=14316 u=root |   
+2017-08-09 21:51:02,672 p=14316 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:51:02,672 p=14316 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:51:03,355 p=14316 u=root |  ok: [localhost]
+2017-08-09 21:51:03,356 p=14316 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:51:04,032 p=14316 u=root |  ok: [localhost]
+2017-08-09 21:51:04,032 p=14316 u=root |  TASK: [diags] ***************************************************************** 
+2017-08-09 21:51:04,035 p=14316 u=root |  ok: [localhost] => {
+    "msg": "biteme"
+}
+2017-08-09 21:51:04,035 p=14316 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 21:51:04,663 p=14316 u=root |  ok: [localhost]
+2017-08-09 21:51:04,664 p=14316 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:51:04,664 p=14316 u=root |  localhost                  : ok=4    changed=0    unreachable=0    failed=0   
+2017-08-09 21:51:25,919 p=14458 u=root |   
+2017-08-09 21:51:25,919 p=14458 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:51:25,919 p=14458 u=root |   
+2017-08-09 21:51:25,924 p=14458 u=root |  ERROR: Syntax Error while loading YAML script, debian8_new_machine_upgrade.yml
+Note: The error may actually appear before this position: line 25, column 1
+
+        msg: "hard"
+	
+^
+2017-08-09 21:51:34,034 p=14498 u=root |   
+2017-08-09 21:51:34,034 p=14498 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:51:34,034 p=14498 u=root |   
+2017-08-09 21:51:34,043 p=14498 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:51:34,043 p=14498 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:51:34,726 p=14498 u=root |  ok: [localhost]
+2017-08-09 21:51:34,726 p=14498 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:51:35,339 p=14498 u=root |  ok: [localhost]
+2017-08-09 21:51:35,340 p=14498 u=root |  TASK: [diags] ***************************************************************** 
+2017-08-09 21:51:35,341 p=14498 u=root |  ok: [localhost] => {
+    "msg": "hard"
+}
+2017-08-09 21:51:35,341 p=14498 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 21:51:39,745 p=14498 u=root |  ok: [localhost]
+2017-08-09 21:51:39,745 p=14498 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:51:39,745 p=14498 u=root |  localhost                  : ok=4    changed=0    unreachable=0    failed=0   
+2017-08-09 21:51:48,974 p=14634 u=root |   
+2017-08-09 21:51:48,974 p=14634 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:51:48,974 p=14634 u=root |   
+2017-08-09 21:51:48,980 p=14634 u=root |  ERROR: Syntax Error while loading YAML script, debian8_new_machine_upgrade.yml
+Note: The error may actually appear before this position: line 24, column 15
+
+      debug:
+        msg: {{ out }}
+              ^
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they 
+start a value. For instance:            
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"      
+
+
+2017-08-09 21:51:57,671 p=14685 u=root |   
+2017-08-09 21:51:57,671 p=14685 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:51:57,671 p=14685 u=root |   
+2017-08-09 21:51:57,677 p=14685 u=root |  ERROR: Syntax Error while loading YAML script, debian8_new_machine_upgrade.yml
+Note: The error may actually appear before this position: line 24, column 15
+
+      debug:
+        msg: {{ "out" }}
+              ^
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they 
+start a value. For instance:            
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"      
+
+
+2017-08-09 21:52:18,820 p=15460 u=root |   
+2017-08-09 21:52:18,820 p=15460 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:52:18,820 p=15460 u=root |   
+2017-08-09 21:52:18,830 p=15460 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:52:18,830 p=15460 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:52:19,399 p=15460 u=root |  ok: [localhost]
+2017-08-09 21:52:19,400 p=15460 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:52:20,035 p=15460 u=root |  ok: [localhost]
+2017-08-09 21:52:20,036 p=15460 u=root |  TASK: [diags] ***************************************************************** 
+2017-08-09 21:52:20,041 p=15460 u=root |  ok: [localhost] => {
+    "msg": {
+        "changed": false, 
+        "invocation": {
+            "module_args": "package=repodeb8-debian-updates", 
+            "module_name": "apt"
+        }
+    }
+}
+2017-08-09 21:52:20,041 p=15460 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 21:52:20,748 p=15460 u=root |  ok: [localhost]
+2017-08-09 21:52:20,749 p=15460 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:52:20,749 p=15460 u=root |  localhost                  : ok=4    changed=0    unreachable=0    failed=0   
+2017-08-09 21:52:34,097 p=15575 u=root |   
+2017-08-09 21:52:34,097 p=15575 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:52:34,097 p=15575 u=root |   
+2017-08-09 21:52:34,106 p=15575 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:52:34,106 p=15575 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:52:34,766 p=15575 u=root |  ok: [localhost]
+2017-08-09 21:52:34,766 p=15575 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:52:35,498 p=15575 u=root |  ok: [localhost]
+2017-08-09 21:52:35,499 p=15575 u=root |  TASK: [diags] ***************************************************************** 
+2017-08-09 21:52:35,505 p=15575 u=root |  fatal: [localhost] => One or more undefined variables: 'dict object' has no attribute 'stdout'
+2017-08-09 21:52:35,506 p=15575 u=root |  FATAL: all hosts have already failed -- aborting
+2017-08-09 21:52:35,506 p=15575 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:52:35,507 p=15575 u=root |             to retry, use: --limit @/root/debian8_new_machine_upgrade.retry
+
+2017-08-09 21:52:35,507 p=15575 u=root |  localhost                  : ok=2    changed=0    unreachable=1    failed=0   
+2017-08-09 21:52:44,161 p=15665 u=root |   
+2017-08-09 21:52:44,161 p=15665 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:52:44,161 p=15665 u=root |   
+2017-08-09 21:52:44,170 p=15665 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:52:44,170 p=15665 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:52:44,823 p=15665 u=root |  ok: [localhost]
+2017-08-09 21:52:44,823 p=15665 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:52:45,487 p=15665 u=root |  ok: [localhost]
+2017-08-09 21:52:45,487 p=15665 u=root |  TASK: [diags] ***************************************************************** 
+2017-08-09 21:52:45,490 p=15665 u=root |  fatal: [localhost] => One or more undefined variables: 'dict object' has no attribute 'stdout_lines'
+2017-08-09 21:52:45,490 p=15665 u=root |  FATAL: all hosts have already failed -- aborting
+2017-08-09 21:52:45,490 p=15665 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:52:45,491 p=15665 u=root |             to retry, use: --limit @/root/debian8_new_machine_upgrade.retry
+
+2017-08-09 21:52:45,491 p=15665 u=root |  localhost                  : ok=2    changed=0    unreachable=1    failed=0   
+2017-08-09 21:54:20,386 p=17498 u=root |   
+2017-08-09 21:54:20,387 p=17498 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:54:20,387 p=17498 u=root |   
+2017-08-09 21:54:20,395 p=17498 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:54:20,395 p=17498 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:54:21,069 p=17498 u=root |  ok: [localhost]
+2017-08-09 21:54:21,069 p=17498 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:54:21,714 p=17498 u=root |  ok: [localhost]
+2017-08-09 21:54:21,715 p=17498 u=root |  TASK: [diags] ***************************************************************** 
+2017-08-09 21:54:21,717 p=17498 u=root |  ok: [localhost] => {
+    "msg": {
+        "changed": false, 
+        "invocation": {
+            "module_args": "package=repodeb8-debian-updates", 
+            "module_name": "apt"
+        }
+    }
+}
+2017-08-09 21:54:21,717 p=17498 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 21:54:25,869 p=17498 u=root |  ok: [localhost]
+2017-08-09 21:54:25,870 p=17498 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:54:25,870 p=17498 u=root |  localhost                  : ok=4    changed=0    unreachable=0    failed=0   
+2017-08-09 21:54:41,809 p=17655 u=root |   
+2017-08-09 21:54:41,809 p=17655 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:54:41,809 p=17655 u=root |   
+2017-08-09 21:54:41,819 p=17655 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:54:41,819 p=17655 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:54:42,434 p=17655 u=root |  ok: [localhost]
+2017-08-09 21:54:42,434 p=17655 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:54:43,172 p=17655 u=root |  ok: [localhost]
+2017-08-09 21:54:43,173 p=17655 u=root |  TASK: [diags] ***************************************************************** 
+2017-08-09 21:54:43,177 p=17655 u=root |  fatal: [localhost] => One or more undefined variables: 'dict object' has no attribute 'stderr'
+2017-08-09 21:54:43,178 p=17655 u=root |  FATAL: all hosts have already failed -- aborting
+2017-08-09 21:54:43,178 p=17655 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:54:43,179 p=17655 u=root |             to retry, use: --limit @/root/debian8_new_machine_upgrade.retry
+
+2017-08-09 21:54:43,179 p=17655 u=root |  localhost                  : ok=2    changed=0    unreachable=1    failed=0   
+2017-08-09 21:54:51,485 p=17745 u=root |   
+2017-08-09 21:54:51,485 p=17745 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:54:51,485 p=17745 u=root |   
+2017-08-09 21:54:51,494 p=17745 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:54:51,494 p=17745 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:54:52,211 p=17745 u=root |  ok: [localhost]
+2017-08-09 21:54:52,212 p=17745 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:54:52,911 p=17745 u=root |  ok: [localhost]
+2017-08-09 21:54:52,912 p=17745 u=root |  TASK: [diags] ***************************************************************** 
+2017-08-09 21:54:52,914 p=17745 u=root |  fatal: [localhost] => One or more undefined variables: 'dict object' has no attribute 'stdout'
+2017-08-09 21:54:52,914 p=17745 u=root |  FATAL: all hosts have already failed -- aborting
+2017-08-09 21:54:52,914 p=17745 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:54:52,915 p=17745 u=root |             to retry, use: --limit @/root/debian8_new_machine_upgrade.retry
+
+2017-08-09 21:54:52,915 p=17745 u=root |  localhost                  : ok=2    changed=0    unreachable=1    failed=0   
+2017-08-09 21:55:14,244 p=18575 u=root |   
+2017-08-09 21:55:14,244 p=18575 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:55:14,244 p=18575 u=root |   
+2017-08-09 21:55:14,253 p=18575 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:55:14,253 p=18575 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:55:14,771 p=18575 u=root |  ok: [localhost]
+2017-08-09 21:55:14,771 p=18575 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:55:15,412 p=18575 u=root |  ok: [localhost]
+2017-08-09 21:55:15,413 p=18575 u=root |  TASK: [diags] ***************************************************************** 
+2017-08-09 21:55:15,415 p=18575 u=root |  ok: [localhost] => {
+    "msg": {
+        "changed": false, 
+        "invocation": {
+            "module_args": "package=repodeb8-debian-updates", 
+            "module_name": "apt"
+        }
+    }
+}
+2017-08-09 21:55:15,415 p=18575 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 21:55:15,995 p=18575 u=root |  ok: [localhost]
+2017-08-09 21:55:15,995 p=18575 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:55:15,995 p=18575 u=root |  localhost                  : ok=4    changed=0    unreachable=0    failed=0   
+2017-08-09 21:55:29,292 p=18690 u=root |   
+2017-08-09 21:55:29,292 p=18690 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:55:29,292 p=18690 u=root |   
+2017-08-09 21:55:29,301 p=18690 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:55:29,301 p=18690 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:55:29,949 p=18690 u=root |  ok: [localhost]
+2017-08-09 21:55:29,950 p=18690 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:55:30,583 p=18690 u=root |  failed: [localhost] => {"failed": true}
+2017-08-09 21:55:30,583 p=18690 u=root |  msg: No package matching 'package' is available
+2017-08-09 21:55:30,584 p=18690 u=root |  FATAL: all hosts have already failed -- aborting
+2017-08-09 21:55:30,584 p=18690 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:55:30,584 p=18690 u=root |             to retry, use: --limit @/root/debian8_new_machine_upgrade.retry
+
+2017-08-09 21:55:30,584 p=18690 u=root |  localhost                  : ok=1    changed=0    unreachable=0    failed=1   
+2017-08-09 21:55:38,370 p=18774 u=root |   
+2017-08-09 21:55:38,370 p=18774 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:55:38,370 p=18774 u=root |   
+2017-08-09 21:55:38,378 p=18774 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:55:38,378 p=18774 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:55:39,020 p=18774 u=root |  ok: [localhost]
+2017-08-09 21:55:39,021 p=18774 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:55:39,635 p=18774 u=root |  ok: [localhost]
+2017-08-09 21:55:39,635 p=18774 u=root |  TASK: [diags] ***************************************************************** 
+2017-08-09 21:55:39,637 p=18774 u=root |  ok: [localhost] => {
+    "msg": {
+        "changed": false, 
+        "invocation": {
+            "module_args": "package=repodeb8-debian-security,repodeb8-debian-updates", 
+            "module_name": "apt"
+        }
+    }
+}
+2017-08-09 21:55:39,637 p=18774 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 21:55:44,075 p=18774 u=root |  ok: [localhost]
+2017-08-09 21:55:44,075 p=18774 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:55:44,076 p=18774 u=root |  localhost                  : ok=4    changed=0    unreachable=0    failed=0   
+2017-08-09 21:56:02,850 p=19649 u=root |   
+2017-08-09 21:56:02,850 p=19649 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:56:02,851 p=19649 u=root |   
+2017-08-09 21:56:02,859 p=19649 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:56:02,860 p=19649 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:56:03,412 p=19649 u=root |  ok: [localhost]
+2017-08-09 21:56:03,413 p=19649 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:56:04,106 p=19649 u=root |  ok: [localhost]
+2017-08-09 21:56:04,106 p=19649 u=root |  TASK: [diags] ***************************************************************** 
+2017-08-09 21:56:04,111 p=19649 u=root |  ok: [localhost] => {
+    "msg": "False"
+}
+2017-08-09 21:56:04,111 p=19649 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 21:56:04,858 p=19649 u=root |  ok: [localhost]
+2017-08-09 21:56:04,859 p=19649 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:56:04,859 p=19649 u=root |  localhost                  : ok=4    changed=0    unreachable=0    failed=0   
+2017-08-09 21:56:11,629 p=19737 u=root |   
+2017-08-09 21:56:11,629 p=19737 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:56:11,629 p=19737 u=root |   
+2017-08-09 21:56:11,638 p=19737 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:56:11,639 p=19737 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:56:12,195 p=19737 u=root |  ok: [localhost]
+2017-08-09 21:56:12,196 p=19737 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:56:12,946 p=19737 u=root |  ok: [localhost]
+2017-08-09 21:56:12,947 p=19737 u=root |  TASK: [diags] ***************************************************************** 
+2017-08-09 21:56:12,952 p=19737 u=root |  ok: [localhost] => {
+    "msg": {
+        "changed": false, 
+        "invocation": {
+            "module_args": "package=repodeb8-debian-security,repodeb8-debian-updates", 
+            "module_name": "apt"
+        }
+    }
+}
+2017-08-09 21:56:12,952 p=19737 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 21:56:13,664 p=19737 u=root |  ok: [localhost]
+2017-08-09 21:56:13,665 p=19737 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:56:13,665 p=19737 u=root |  localhost                  : ok=4    changed=0    unreachable=0    failed=0   
+2017-08-09 21:57:53,521 p=22746 u=root |  
+2017-08-09 21:57:53,522 p=22746 u=root |  /usr/bin/ansible --version
+2017-08-09 21:57:53,522 p=22746 u=root |  
+2017-08-09 21:59:43,105 p=24616 u=root |   
+2017-08-09 21:59:43,105 p=24616 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:59:43,105 p=24616 u=root |   
+2017-08-09 21:59:43,114 p=24616 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:59:43,114 p=24616 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:59:43,737 p=24616 u=root |  ok: [localhost]
+2017-08-09 21:59:43,738 p=24616 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:59:44,414 p=24616 u=root |  ok: [localhost]
+2017-08-09 21:59:44,414 p=24616 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 21:59:48,666 p=24616 u=root |  ok: [localhost]
+2017-08-09 21:59:48,667 p=24616 u=root |  TASK: [Upgrade_Ansible_To_A_Less_Sucky_Version] ******************************* 
+2017-08-09 21:59:49,850 p=24616 u=root |  ok: [localhost]
+2017-08-09 21:59:49,850 p=24616 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 21:59:49,850 p=24616 u=root |  localhost                  : ok=4    changed=0    unreachable=0    failed=0   
+2017-08-09 21:59:53,467 p=24745 u=root |  
+2017-08-09 21:59:53,468 p=24745 u=root |  /usr/bin/ansible --version
+2017-08-09 21:59:53,468 p=24745 u=root |  
+2017-08-09 21:59:58,452 p=24765 u=root |   
+2017-08-09 21:59:58,453 p=24765 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 21:59:58,453 p=24765 u=root |   
+2017-08-09 21:59:58,461 p=24765 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 21:59:58,461 p=24765 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 21:59:59,141 p=24765 u=root |  ok: [localhost]
+2017-08-09 21:59:59,142 p=24765 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 21:59:59,864 p=24765 u=root |  ok: [localhost]
+2017-08-09 21:59:59,865 p=24765 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 22:00:00,545 p=24765 u=root |  ok: [localhost]
+2017-08-09 22:00:00,545 p=24765 u=root |  TASK: [Upgrade_Ansible_To_A_Less_Sucky_Version] ******************************* 
+2017-08-09 22:00:01,704 p=24765 u=root |  ok: [localhost]
+2017-08-09 22:00:01,704 p=24765 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 22:00:01,704 p=24765 u=root |  localhost                  : ok=4    changed=0    unreachable=0    failed=0   
+2017-08-09 22:00:03,432 p=25546 u=root |  
+2017-08-09 22:00:03,432 p=25546 u=root |  /usr/bin/ansible --version
+2017-08-09 22:00:03,432 p=25546 u=root |  
+2017-08-09 22:00:45,814 p=25740 u=root |   
+2017-08-09 22:00:45,814 p=25740 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 22:00:45,814 p=25740 u=root |   
+2017-08-09 22:00:45,821 p=25740 u=root |  ERROR: multiple actions specified in task: 'apt' and 'Upgrade_Ansible_To_A_Less_Sucky_Version'
+2017-08-09 22:01:00,867 p=25801 u=root |   
+2017-08-09 22:01:00,867 p=25801 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 22:01:00,867 p=25801 u=root |   
+2017-08-09 22:01:00,877 p=25801 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 22:01:00,877 p=25801 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 22:01:01,541 p=25801 u=root |  ok: [localhost]
+2017-08-09 22:01:01,541 p=25801 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 22:01:02,215 p=25801 u=root |  ok: [localhost]
+2017-08-09 22:01:02,215 p=25801 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 22:01:06,782 p=25801 u=root |  ok: [localhost]
+2017-08-09 22:01:06,783 p=25801 u=root |  TASK: [Upgrade_Ansible_To_A_Less_Sucky_Version] ******************************* 
+2017-08-09 22:01:08,126 p=25801 u=root |  ok: [localhost]
+2017-08-09 22:01:08,126 p=25801 u=root |  TASK: [debug ] **************************************************************** 
+2017-08-09 22:01:08,131 p=25801 u=root |  ok: [localhost] => {
+    "msg": {
+        "changed": false, 
+        "invocation": {
+            "module_args": "package=ansible default-release=jessie-backports", 
+            "module_name": "apt"
+        }
+    }
+}
+2017-08-09 22:01:08,131 p=25801 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 22:01:08,132 p=25801 u=root |  localhost                  : ok=5    changed=0    unreachable=0    failed=0   
+2017-08-09 22:01:53,175 p=26796 u=root |   
+2017-08-09 22:01:53,175 p=26796 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 22:01:53,175 p=26796 u=root |   
+2017-08-09 22:01:53,184 p=26796 u=root |  ERROR: default-release is not a legal parameter in an Ansible task or handler
+2017-08-09 22:02:10,698 p=27569 u=root |   
+2017-08-09 22:02:10,698 p=27569 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 22:02:10,698 p=27569 u=root |   
+2017-08-09 22:02:10,707 p=27569 u=root |  ERROR: default_release is not a legal parameter in an Ansible task or handler
+2017-08-09 22:03:52,347 p=28699 u=root |   
+2017-08-09 22:03:52,348 p=28699 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 22:03:52,348 p=28699 u=root |   
+2017-08-09 22:03:52,353 p=28699 u=root |  ERROR: Syntax Error while loading YAML script, debian8_new_machine_upgrade.yml
+Note: The error may actually appear before this position: line 26, column 1
+
+        name: ansible
+	state: latest
+^
+2017-08-09 22:04:15,019 p=29985 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/root/debian_bootstrap/debian8_new_machine_upgrade.yml': line 26, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        name: ansible
+	state: latest
+^ here
+
+2017-08-09 22:04:37,860 p=30091 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/root/debian_bootstrap/debian8_new_machine_upgrade.yml': line 26, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        name=ansible
+	state=latest
+^ here
+
+2017-08-09 22:04:54,199 p=30171 u=root |   [WARNING]: While constructing a mapping from
+/root/debian_bootstrap/debian8_new_machine_upgrade.yml, line 6, column 7, found
+a duplicate dict key (apt). Using last defined value only.
+
+2017-08-09 22:04:54,561 p=30171 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:04:54,588 p=30171 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:04:55,363 p=30171 u=root |  ok: [localhost]
+2017-08-09 22:04:55,367 p=30171 u=root |  TASK [Install_Debian8_Stable_Local_Repositories] *******************************
+2017-08-09 22:04:56,712 p=30171 u=root |  ok: [localhost]
+2017-08-09 22:04:56,717 p=30171 u=root |  TASK [Refresh_Apt_Package_Cache] ***********************************************
+2017-08-09 22:05:01,743 p=30171 u=root |  changed: [localhost]
+2017-08-09 22:05:01,749 p=30171 u=root |  TASK [Upgrade_Ansible_To_A_Less_Sucky_Version] *********************************
+2017-08-09 22:05:03,033 p=30171 u=root |  ok: [localhost]
+2017-08-09 22:05:03,038 p=30171 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:05:03,067 p=30171 u=root |  ok: [localhost] => {
+    "msg": {
+        "cache_update_time": 1502330700, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:05:03,069 p=30171 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:05:03,069 p=30171 u=root |  localhost                  : ok=5    changed=1    unreachable=0    failed=0   
+2017-08-09 22:05:18,376 p=31125 u=root |   [WARNING]: While constructing a mapping from
+/root/debian_bootstrap/debian8_new_machine_upgrade.yml, line 6, column 7, found
+a duplicate dict key (apt). Using last defined value only.
+
+2017-08-09 22:05:18,394 p=31125 u=root |  ERROR! 'default_release' is not a valid attribute for a Task
+
+The error appears to have been in '/root/debian_bootstrap/debian8_new_machine_upgrade.yml': line 23, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name: Upgrade_Ansible_To_A_Less_Sucky_Version
+      ^ here
+
+2017-08-09 22:05:56,934 p=31301 u=root |   [WARNING]: While constructing a mapping from
+/root/debian_bootstrap/debian8_new_machine_upgrade.yml, line 6, column 7, found
+a duplicate dict key (apt). Using last defined value only.
+
+2017-08-09 22:05:57,288 p=31301 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:05:57,306 p=31301 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:05:58,061 p=31301 u=root |  ok: [localhost]
+2017-08-09 22:05:58,064 p=31301 u=root |  TASK [Install_Debian8_Stable_Local_Repositories] *******************************
+2017-08-09 22:05:59,366 p=31301 u=root |  ok: [localhost]
+2017-08-09 22:05:59,371 p=31301 u=root |  TASK [Refresh_Apt_Package_Cache] ***********************************************
+2017-08-09 22:06:00,532 p=31301 u=root |  ok: [localhost]
+2017-08-09 22:06:00,536 p=31301 u=root |  TASK [Upgrade_Ansible_To_A_Less_Sucky_Version] *********************************
+2017-08-09 22:06:02,138 p=31301 u=root |  ok: [localhost]
+2017-08-09 22:06:02,142 p=31301 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:06:02,184 p=31301 u=root |  ok: [localhost] => {
+    "msg": {
+        "cache_update_time": 1502330700, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:06:02,186 p=31301 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:06:02,186 p=31301 u=root |  localhost                  : ok=5    changed=0    unreachable=0    failed=0   
+2017-08-09 22:06:20,184 p=778 u=root |  
+2017-08-09 22:06:20,184 p=778 u=root |  /usr/bin/ansible --version
+2017-08-09 22:06:20,184 p=778 u=root |  
+2017-08-09 22:06:23,608 p=798 u=root |   
+2017-08-09 22:06:23,608 p=798 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 22:06:23,608 p=798 u=root |   
+2017-08-09 22:06:23,618 p=798 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 22:06:23,618 p=798 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 22:06:24,355 p=798 u=root |  ok: [localhost]
+2017-08-09 22:06:24,355 p=798 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 22:06:25,101 p=798 u=root |  ok: [localhost]
+2017-08-09 22:06:25,102 p=798 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 22:06:29,326 p=798 u=root |  ok: [localhost]
+2017-08-09 22:06:29,326 p=798 u=root |  TASK: [Upgrade_Ansible_To_A_Less_Sucky_Version] ******************************* 
+2017-08-09 22:06:30,591 p=798 u=root |  ok: [localhost]
+2017-08-09 22:06:30,592 p=798 u=root |  TASK: [debug ] **************************************************************** 
+2017-08-09 22:06:30,596 p=798 u=root |  ok: [localhost] => {
+    "msg": {
+        "changed": false, 
+        "invocation": {
+            "module_args": "package=ansible default_release=jessie-backports", 
+            "module_name": "apt"
+        }
+    }
+}
+2017-08-09 22:06:30,597 p=798 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 22:06:30,597 p=798 u=root |  localhost                  : ok=5    changed=0    unreachable=0    failed=0   
+2017-08-09 22:06:34,047 p=925 u=root |  
+2017-08-09 22:06:34,047 p=925 u=root |  /usr/bin/ansible --version
+2017-08-09 22:06:34,047 p=925 u=root |  
+2017-08-09 22:07:21,118 p=2011 u=root |  
+2017-08-09 22:07:21,118 p=2011 u=root |  /usr/bin/ansible --version
+2017-08-09 22:07:21,118 p=2011 u=root |  
+2017-08-09 22:07:24,665 p=2030 u=root |  
+2017-08-09 22:07:24,666 p=2030 u=root |  /usr/bin/ansible install
+2017-08-09 22:07:24,666 p=2030 u=root |  
+2017-08-09 22:07:24,668 p=2030 u=root |  No hosts matched
+2017-08-09 22:08:31,189 p=4639 u=root |  
+2017-08-09 22:08:31,189 p=4639 u=root |  /usr/bin/ansible --version
+2017-08-09 22:08:31,189 p=4639 u=root |  
+2017-08-09 22:08:50,899 p=4724 u=root |   
+2017-08-09 22:08:50,899 p=4724 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 22:08:50,899 p=4724 u=root |   
+2017-08-09 22:08:50,904 p=4724 u=root |  ERROR: Syntax Error while loading YAML script, debian8_new_machine_upgrade.yml
+Note: The error may actually appear before this position: line 27, column 1
+
+        default_release=jessie-backports
+	state=latest
+^
+2017-08-09 22:09:07,572 p=5493 u=root |   
+2017-08-09 22:09:07,572 p=5493 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 22:09:07,572 p=5493 u=root |   
+2017-08-09 22:09:07,581 p=5493 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 22:09:07,581 p=5493 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 22:09:08,266 p=5493 u=root |  ok: [localhost]
+2017-08-09 22:09:08,266 p=5493 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 22:09:08,941 p=5493 u=root |  ok: [localhost]
+2017-08-09 22:09:08,941 p=5493 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 22:09:13,288 p=5493 u=root |  ok: [localhost]
+2017-08-09 22:09:13,289 p=5493 u=root |  TASK: [Upgrade_Ansible_To_A_Less_Sucky_Version] ******************************* 
+2017-08-09 22:09:18,926 p=5493 u=root |  changed: [localhost]
+2017-08-09 22:09:18,927 p=5493 u=root |  TASK: [debug ] **************************************************************** 
+2017-08-09 22:09:18,932 p=5493 u=root |  fatal: [localhost] => Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/ansible/runner/__init__.py", line 561, in _executor
+  File "/usr/lib/python2.7/dist-packages/ansible/runner/__init__.py", line 666, in _executor_internal
+  File "/usr/lib/python2.7/dist-packages/ansible/runner/__init__.py", line 884, in _executor_internal_inner
+  File "/usr/lib/python2.7/dist-packages/ansible/runner/action_plugins/normal.py", line 57, in run
+  File "/usr/lib/python2.7/dist-packages/ansible/runner/__init__.py", line 442, in _execute_module
+  File "/usr/lib/python2.7/dist-packages/ansible/runner/__init__.py", line 1151, in _configure_module
+  File "/usr/lib/python2.7/dist-packages/ansible/module_common.py", line 142, in modify_module
+IOError: [Errno 2] No such file or directory: '/usr/share/ansible/utilities/debug'
+
+2017-08-09 22:09:18,932 p=5493 u=root |  FATAL: all hosts have already failed -- aborting
+2017-08-09 22:09:18,932 p=5493 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 22:09:18,933 p=5493 u=root |             to retry, use: --limit @/root/debian8_new_machine_upgrade.retry
+
+2017-08-09 22:09:18,933 p=5493 u=root |  localhost                  : ok=4    changed=1    unreachable=1    failed=0   
+2017-08-09 22:09:46,319 p=6236 u=root |   [WARNING]: While constructing a mapping from
+/root/debian_bootstrap/debian8_new_machine_upgrade.yml, line 6, column 7, found
+a duplicate dict key (apt). Using last defined value only.
+
+2017-08-09 22:09:46,686 p=6236 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:09:46,700 p=6236 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:09:47,439 p=6236 u=root |  ok: [localhost]
+2017-08-09 22:09:47,442 p=6236 u=root |  TASK [Install_Debian8_Stable_Local_Repositories] *******************************
+2017-08-09 22:09:48,708 p=6236 u=root |  ok: [localhost]
+2017-08-09 22:09:48,711 p=6236 u=root |  TASK [Refresh_Apt_Package_Cache] ***********************************************
+2017-08-09 22:09:49,875 p=6236 u=root |  ok: [localhost]
+2017-08-09 22:09:49,880 p=6236 u=root |  TASK [Upgrade_Ansible_To_A_Less_Sucky_Version] *********************************
+2017-08-09 22:09:51,779 p=6236 u=root |  ok: [localhost]
+2017-08-09 22:09:51,785 p=6236 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:09:51,820 p=6236 u=root |  ok: [localhost] => {
+    "msg": {
+        "cache_update_time": 1502330952, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:09:51,822 p=6236 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:09:51,822 p=6236 u=root |  localhost                  : ok=5    changed=0    unreachable=0    failed=0   
+2017-08-09 22:10:23,993 p=8212 u=root |   
+2017-08-09 22:10:23,993 p=8212 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 22:10:23,993 p=8212 u=root |   
+2017-08-09 22:10:24,003 p=8212 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 22:10:24,003 p=8212 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 22:10:24,693 p=8212 u=root |  ok: [localhost]
+2017-08-09 22:10:24,693 p=8212 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 22:10:25,335 p=8212 u=root |  ok: [localhost]
+2017-08-09 22:10:25,335 p=8212 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 22:10:29,796 p=8212 u=root |  ok: [localhost]
+2017-08-09 22:10:29,797 p=8212 u=root |  TASK: [Upgrade_Ansible_To_A_Less_Sucky_Version] ******************************* 
+2017-08-09 22:10:35,453 p=8212 u=root |  changed: [localhost]
+2017-08-09 22:10:35,454 p=8212 u=root |  TASK: [debug ] **************************************************************** 
+2017-08-09 22:10:35,456 p=8212 u=root |  fatal: [localhost] => Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/ansible/runner/__init__.py", line 561, in _executor
+  File "/usr/lib/python2.7/dist-packages/ansible/runner/__init__.py", line 666, in _executor_internal
+  File "/usr/lib/python2.7/dist-packages/ansible/runner/__init__.py", line 884, in _executor_internal_inner
+  File "/usr/lib/python2.7/dist-packages/ansible/runner/action_plugins/normal.py", line 57, in run
+  File "/usr/lib/python2.7/dist-packages/ansible/runner/__init__.py", line 442, in _execute_module
+  File "/usr/lib/python2.7/dist-packages/ansible/runner/__init__.py", line 1151, in _configure_module
+  File "/usr/lib/python2.7/dist-packages/ansible/module_common.py", line 142, in modify_module
+IOError: [Errno 2] No such file or directory: '/usr/share/ansible/utilities/debug'
+
+2017-08-09 22:10:35,456 p=8212 u=root |  FATAL: all hosts have already failed -- aborting
+2017-08-09 22:10:35,457 p=8212 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 22:10:35,457 p=8212 u=root |             to retry, use: --limit @/root/debian8_new_machine_upgrade.retry
+
+2017-08-09 22:10:35,457 p=8212 u=root |  localhost                  : ok=4    changed=1    unreachable=1    failed=0   
+2017-08-09 22:10:39,683 p=8851 u=root |   [WARNING]: While constructing a mapping from
+/root/debian_bootstrap/debian8_new_machine_upgrade.yml, line 6, column 7, found
+a duplicate dict key (apt). Using last defined value only.
+
+2017-08-09 22:10:40,011 p=8851 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:10:40,023 p=8851 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:10:40,735 p=8851 u=root |  ok: [localhost]
+2017-08-09 22:10:40,737 p=8851 u=root |  TASK [Install_Debian8_Stable_Local_Repositories] *******************************
+2017-08-09 22:10:42,033 p=8851 u=root |  ok: [localhost]
+2017-08-09 22:10:42,037 p=8851 u=root |  TASK [Refresh_Apt_Package_Cache] ***********************************************
+2017-08-09 22:10:43,182 p=8851 u=root |  ok: [localhost]
+2017-08-09 22:10:43,184 p=8851 u=root |  TASK [Upgrade_Ansible_To_A_Less_Sucky_Version] *********************************
+2017-08-09 22:10:44,917 p=8851 u=root |  ok: [localhost]
+2017-08-09 22:10:44,919 p=8851 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:10:44,945 p=8851 u=root |  ok: [localhost] => {
+    "msg": {
+        "cache_update_time": 1502331029, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:10:44,946 p=8851 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:10:44,946 p=8851 u=root |  localhost                  : ok=5    changed=0    unreachable=0    failed=0   
+2017-08-09 22:11:47,534 p=9975 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/root/debian_bootstrap/debian8_new_machine_upgrade.yml': line 18, column 10, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        Refresh_Apt_Package_Cache
+      apt:
+         ^ here
+
+2017-08-09 22:12:00,038 p=10025 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:12:00,051 p=10025 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:12:00,828 p=10025 u=root |  ok: [localhost]
+2017-08-09 22:12:00,832 p=10025 u=root |  TASK [Install_Debian8_Stable_Local_Repositories] *******************************
+2017-08-09 22:12:02,213 p=10025 u=root |  ok: [localhost]
+2017-08-09 22:12:02,216 p=10025 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:12:02,241 p=10025 u=root |  ok: [localhost] => {
+    "msg": {
+        "cache_update_time": 1502331029, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:12:02,243 p=10025 u=root |  TASK [Refresh_Apt_Package_Cache] ***********************************************
+2017-08-09 22:12:06,804 p=10025 u=root |  changed: [localhost]
+2017-08-09 22:12:06,809 p=10025 u=root |  TASK [Upgrade_Ansible_To_A_Less_Sucky_Version] *********************************
+2017-08-09 22:12:08,442 p=10025 u=root |  ok: [localhost]
+2017-08-09 22:12:08,446 p=10025 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:12:08,478 p=10025 u=root |  ok: [localhost] => {
+    "msg": {
+        "cache_update_time": 1502331126, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:12:08,479 p=10025 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:12:08,479 p=10025 u=root |  localhost                  : ok=6    changed=1    unreachable=0    failed=0   
+2017-08-09 22:12:35,778 p=11045 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:12:35,802 p=11045 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:12:36,592 p=11045 u=root |  ok: [localhost]
+2017-08-09 22:12:36,598 p=11045 u=root |  TASK [Install_Debian8_Stable_Local_Repositories] *******************************
+2017-08-09 22:12:37,925 p=11045 u=root |  ok: [localhost]
+2017-08-09 22:12:37,929 p=11045 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:12:37,973 p=11045 u=root |  fatal: [localhost]: FAILED! => {"changed": false, "failed": true, "msg": "'name' is not a valid option in debug"}
+2017-08-09 22:12:37,974 p=11045 u=root |  	to retry, use: --limit @/root/debian_bootstrap/debian8_new_machine_upgrade.retry
+
+2017-08-09 22:12:37,974 p=11045 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:12:37,974 p=11045 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=1   
+2017-08-09 22:14:24,240 p=12969 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:14:24,266 p=12969 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:14:24,969 p=12969 u=root |  ok: [localhost]
+2017-08-09 22:14:24,972 p=12969 u=root |  TASK [Install_Debian8_Stable_Local_Repositories] *******************************
+2017-08-09 22:14:26,087 p=12969 u=root |  ok: [localhost]
+2017-08-09 22:14:26,092 p=12969 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:14:26,139 p=12969 u=root |  ok: [localhost] => {
+    "repo_out": {
+        "cache_update_time": 1502331126, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:14:26,142 p=12969 u=root |  TASK [Refresh_Apt_Package_Cache] ***********************************************
+2017-08-09 22:14:31,098 p=12969 u=root |  changed: [localhost]
+2017-08-09 22:14:31,103 p=12969 u=root |  TASK [Upgrade_Ansible_To_A_Less_Sucky_Version] *********************************
+2017-08-09 22:14:32,780 p=12969 u=root |  ok: [localhost]
+2017-08-09 22:14:32,782 p=12969 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:14:32,824 p=12969 u=root |  ok: [localhost] => {
+    "msg": {
+        "cache_update_time": 1502331270, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:14:32,825 p=12969 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:14:32,825 p=12969 u=root |  localhost                  : ok=6    changed=1    unreachable=0    failed=0   
+2017-08-09 22:14:55,722 p=13263 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:14:55,736 p=13263 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:14:56,492 p=13263 u=root |  ok: [localhost]
+2017-08-09 22:14:56,497 p=13263 u=root |  TASK [Install_Debian8_Stable_Local_Repositories] *******************************
+2017-08-09 22:14:57,808 p=13263 u=root |  ok: [localhost]
+2017-08-09 22:14:57,813 p=13263 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:14:57,839 p=13263 u=root |  ok: [localhost] => {
+    "repo_out": {
+        "cache_update_time": 1502331270, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:14:57,843 p=13263 u=root |  TASK [Refresh_Apt_Package_Cache] ***********************************************
+2017-08-09 22:14:58,995 p=13263 u=root |  ok: [localhost]
+2017-08-09 22:14:58,999 p=13263 u=root |  TASK [Upgrade_Ansible_To_A_Less_Sucky_Version] *********************************
+2017-08-09 22:15:00,718 p=13263 u=root |  ok: [localhost]
+2017-08-09 22:15:00,723 p=13263 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:15:00,775 p=13263 u=root |  ok: [localhost] => {
+    "msg": {
+        "cache_update_time": 1502331270, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:15:00,777 p=13263 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:15:00,778 p=13263 u=root |  localhost                  : ok=6    changed=0    unreachable=0    failed=0   
+2017-08-09 22:15:58,774 p=14360 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:15:58,786 p=14360 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:15:59,404 p=14360 u=root |  ok: [localhost]
+2017-08-09 22:15:59,409 p=14360 u=root |  TASK [Install_Debian8_Stable_Local_Repositories] *******************************
+2017-08-09 22:16:00,803 p=14360 u=root |  ok: [localhost]
+2017-08-09 22:16:00,809 p=14360 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:16:00,843 p=14360 u=root |  ok: [localhost] => {
+    "repo_out": {
+        "cache_update_time": 1502331270, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:16:00,845 p=14360 u=root |  TASK [Refresh_Apt_Package_Cache] ***********************************************
+2017-08-09 22:16:05,432 p=14360 u=root |  changed: [localhost]
+2017-08-09 22:16:05,437 p=14360 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:16:05,478 p=14360 u=root |  ok: [localhost] => {
+    "update_cache_out": {
+        "cache_update_time": 1502331364, 
+        "cache_updated": true, 
+        "changed": true
+    }
+}
+2017-08-09 22:16:05,482 p=14360 u=root |  TASK [Upgrade_Ansible_To_A_Less_Sucky_Version] *********************************
+2017-08-09 22:16:07,055 p=14360 u=root |  ok: [localhost]
+2017-08-09 22:16:07,059 p=14360 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:16:07,108 p=14360 u=root |  ok: [localhost] => {
+    "msg": {
+        "cache_update_time": 1502331364, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:16:07,110 p=14360 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:16:07,110 p=14360 u=root |  localhost                  : ok=7    changed=1    unreachable=0    failed=0   
+2017-08-09 22:16:23,309 p=15326 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:16:23,323 p=15326 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:16:24,177 p=15326 u=root |  ok: [localhost]
+2017-08-09 22:16:24,181 p=15326 u=root |  TASK [Install_Debian8_Stable_Local_Repositories] *******************************
+2017-08-09 22:16:25,413 p=15326 u=root |  ok: [localhost]
+2017-08-09 22:16:25,418 p=15326 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:16:25,469 p=15326 u=root |  ok: [localhost] => {
+    "repo_out": {
+        "cache_update_time": 1502331364, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:16:25,473 p=15326 u=root |  TASK [Refresh_Apt_Package_Cache] ***********************************************
+2017-08-09 22:16:26,580 p=15326 u=root |  ok: [localhost]
+2017-08-09 22:16:26,584 p=15326 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:16:26,633 p=15326 u=root |  ok: [localhost] => {
+    "update_cache_out": {
+        "cache_update_time": 1502331364, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:16:26,636 p=15326 u=root |  TASK [Upgrade_Ansible_To_A_Less_Sucky_Version] *********************************
+2017-08-09 22:16:28,319 p=15326 u=root |  ok: [localhost]
+2017-08-09 22:16:28,323 p=15326 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:16:28,370 p=15326 u=root |  ok: [localhost] => {
+    "msg": {
+        "cache_update_time": 1502331364, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:16:28,372 p=15326 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:16:28,372 p=15326 u=root |  localhost                  : ok=7    changed=0    unreachable=0    failed=0   
+2017-08-09 22:17:05,051 p=16350 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:17:05,064 p=16350 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:17:05,783 p=16350 u=root |  ok: [localhost]
+2017-08-09 22:17:05,786 p=16350 u=root |  TASK [Install_Debian8_Stable_Local_Repositories] *******************************
+2017-08-09 22:17:07,071 p=16350 u=root |  ok: [localhost]
+2017-08-09 22:17:07,076 p=16350 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:17:07,130 p=16350 u=root |  ok: [localhost] => {
+    "repo_out": {
+        "cache_update_time": 1502331364, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:17:07,135 p=16350 u=root |  TASK [Refresh_Apt_Package_Cache] ***********************************************
+2017-08-09 22:17:11,804 p=16350 u=root |  changed: [localhost]
+2017-08-09 22:17:11,807 p=16350 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:17:11,858 p=16350 u=root |  ok: [localhost] => {
+    "update_cache_out": {
+        "cache_update_time": 1502331431, 
+        "cache_updated": true, 
+        "changed": true
+    }
+}
+2017-08-09 22:17:11,860 p=16350 u=root |  TASK [Upgrade_Ansible_To_A_Less_Sucky_Version] *********************************
+2017-08-09 22:17:13,571 p=16350 u=root |  ok: [localhost]
+2017-08-09 22:17:13,576 p=16350 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:17:13,628 p=16350 u=root |  ok: [localhost] => {
+    "upgrade_ansible_out": {
+        "cache_update_time": 1502331431, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:17:13,630 p=16350 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:17:13,630 p=16350 u=root |  localhost                  : ok=7    changed=1    unreachable=0    failed=0   
+2017-08-09 22:17:46,482 p=17668 u=root |   
+2017-08-09 22:17:46,483 p=17668 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 22:17:46,483 p=17668 u=root |   
+2017-08-09 22:17:46,494 p=17668 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 22:17:46,494 p=17668 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 22:17:47,183 p=17668 u=root |  ok: [localhost]
+2017-08-09 22:17:47,183 p=17668 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 22:17:47,913 p=17668 u=root |  ok: [localhost]
+2017-08-09 22:17:47,914 p=17668 u=root |  TASK: [debug ] **************************************************************** 
+2017-08-09 22:17:47,919 p=17668 u=root |  ok: [localhost] => {
+    "repo_out": {
+        "changed": false, 
+        "invocation": {
+            "module_args": "package=repodeb8-debian,repodeb8-debian-backports,repodeb8-debian-security,repodeb8-debian-updates", 
+            "module_name": "apt"
+        }
+    }
+}
+2017-08-09 22:17:47,919 p=17668 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 22:17:48,635 p=17668 u=root |  ok: [localhost]
+2017-08-09 22:17:48,636 p=17668 u=root |  TASK: [debug ] **************************************************************** 
+2017-08-09 22:17:48,640 p=17668 u=root |  ok: [localhost] => {
+    "update_cache_out": {
+        "changed": false, 
+        "invocation": {
+            "module_args": "update_cache=yes cache_valid_time=60", 
+            "module_name": "apt"
+        }
+    }
+}
+2017-08-09 22:17:48,640 p=17668 u=root |  TASK: [Upgrade_Ansible_To_A_Less_Sucky_Version] ******************************* 
+2017-08-09 22:17:54,340 p=17668 u=root |  changed: [localhost]
+2017-08-09 22:17:54,340 p=17668 u=root |  TASK: [debug ] **************************************************************** 
+2017-08-09 22:17:54,345 p=17668 u=root |  ok: [localhost] => {
+    "upgrade_ansible_out": {
+        "changed": true, 
+        "invocation": {
+            "module_args": "package=ansible default_release=jessie-backports state=latest", 
+            "module_name": "apt"
+        }, 
+        "stderr": "", 
+        "stdout": "Reading package lists...\nBuilding dependency tree...\nReading state information...\nSuggested packages:\n  cowsay\nRecommended packages:\n  python-winrm\nThe following packages will be upgraded:\n  ansible\n1 upgraded, 0 newly installed, 0 to remove and 781 not upgraded.\nNeed to get 0 B/1,684 kB of archives.\nAfter this operation, 9,174 kB of additional disk space will be used.\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 411826 files and directories currently installed.)\r\nPreparing to unpack .../ansible_2.2.1.0-2~bpo8+1_all.deb ...\r\nUnpacking ansible (2.2.1.0-2~bpo8+1) over (1.7.2+dfsg-2) ...\r\nProcessing triggers for man-db (2.7.0.2-5) ...\r\nSetting up ansible (2.2.1.0-2~bpo8+1) ...\r\nInstalling new version of config file /etc/ansible/ansible.cfg ...\r\n", 
+        "stdout_lines": [
+            "Reading package lists...", 
+            "Building dependency tree...", 
+            "Reading state information...", 
+            "Suggested packages:", 
+            "  cowsay", 
+            "Recommended packages:", 
+            "  python-winrm", 
+            "The following packages will be upgraded:", 
+            "  ansible", 
+            "1 upgraded, 0 newly installed, 0 to remove and 781 not upgraded.", 
+            "Need to get 0 B/1,684 kB of archives.", 
+            "After this operation, 9,174 kB of additional disk space will be used.", 
+            "(Reading database ... ", 
+            "(Reading database ... 5%", 
+            "(Reading database ... 10%", 
+            "(Reading database ... 15%", 
+            "(Reading database ... 20%", 
+            "(Reading database ... 25%", 
+            "(Reading database ... 30%", 
+            "(Reading database ... 35%", 
+            "(Reading database ... 40%", 
+            "(Reading database ... 45%", 
+            "(Reading database ... 50%", 
+            "(Reading database ... 55%", 
+            "(Reading database ... 60%", 
+            "(Reading database ... 65%", 
+            "(Reading database ... 70%", 
+            "(Reading database ... 75%", 
+            "(Reading database ... 80%", 
+            "(Reading database ... 85%", 
+            "(Reading database ... 90%", 
+            "(Reading database ... 95%", 
+            "(Reading database ... 100%", 
+            "(Reading database ... 411826 files and directories currently installed.)", 
+            "Preparing to unpack .../ansible_2.2.1.0-2~bpo8+1_all.deb ...", 
+            "Unpacking ansible (2.2.1.0-2~bpo8+1) over (1.7.2+dfsg-2) ...", 
+            "Processing triggers for man-db (2.7.0.2-5) ...", 
+            "Setting up ansible (2.2.1.0-2~bpo8+1) ...", 
+            "Installing new version of config file /etc/ansible/ansible.cfg ..."
+        ]
+    }
+}
+2017-08-09 22:17:54,346 p=17668 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 22:17:54,346 p=17668 u=root |  localhost                  : ok=7    changed=1    unreachable=0    failed=0   
+2017-08-09 22:19:01,945 p=19233 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:19:01,958 p=19233 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:19:02,520 p=19233 u=root |  ok: [localhost]
+2017-08-09 22:19:02,523 p=19233 u=root |  TASK [Install_Debian8_Stable_Local_Repositories] *******************************
+2017-08-09 22:19:03,787 p=19233 u=root |  ok: [localhost]
+2017-08-09 22:19:03,792 p=19233 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:19:03,844 p=19233 u=root |  ok: [localhost] => {
+    "repo_out": {
+        "cache_update_time": 1502331431, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:19:03,849 p=19233 u=root |  TASK [Refresh_Apt_Package_Cache] ***********************************************
+2017-08-09 22:19:08,645 p=19233 u=root |  changed: [localhost]
+2017-08-09 22:19:08,649 p=19233 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:19:08,682 p=19233 u=root |  ok: [localhost] => {
+    "update_cache_out": {
+        "cache_update_time": 1502331547, 
+        "cache_updated": true, 
+        "changed": true
+    }
+}
+2017-08-09 22:19:08,687 p=19233 u=root |  TASK [precheck] ****************************************************************
+2017-08-09 22:19:09,063 p=19233 u=root |  changed: [localhost]
+2017-08-09 22:19:09,068 p=19233 u=root |  TASK [Upgrade_Ansible_To_A_Less_Sucky_Version] *********************************
+2017-08-09 22:19:10,751 p=19233 u=root |  ok: [localhost]
+2017-08-09 22:19:10,756 p=19233 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:19:10,785 p=19233 u=root |  ok: [localhost] => {
+    "upgrade_ansible_out": {
+        "cache_update_time": 1502331547, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:19:10,790 p=19233 u=root |  TASK [postcheck] ***************************************************************
+2017-08-09 22:19:11,057 p=19233 u=root |  changed: [localhost]
+2017-08-09 22:19:11,059 p=19233 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:19:11,059 p=19233 u=root |  localhost                  : ok=9    changed=3    unreachable=0    failed=0   
+2017-08-09 22:19:57,337 p=20367 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:19:57,351 p=20367 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:19:58,068 p=20367 u=root |  ok: [localhost]
+2017-08-09 22:19:58,073 p=20367 u=root |  TASK [Install_Debian8_Stable_Local_Repositories] *******************************
+2017-08-09 22:19:59,475 p=20367 u=root |  ok: [localhost]
+2017-08-09 22:19:59,478 p=20367 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:19:59,521 p=20367 u=root |  ok: [localhost] => {
+    "repo_out": {
+        "cache_update_time": 1502331547, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:19:59,523 p=20367 u=root |  TASK [Refresh_Apt_Package_Cache] ***********************************************
+2017-08-09 22:20:00,534 p=20367 u=root |  ok: [localhost]
+2017-08-09 22:20:00,538 p=20367 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:20:00,564 p=20367 u=root |  ok: [localhost] => {
+    "update_cache_out": {
+        "cache_update_time": 1502331547, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:20:00,569 p=20367 u=root |  TASK [precheck] ****************************************************************
+2017-08-09 22:20:00,937 p=20367 u=root |  changed: [localhost]
+2017-08-09 22:20:00,942 p=20367 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:20:00,970 p=20367 u=root |  ok: [localhost] => {
+    "a": {
+        "changed": true, 
+        "cmd": [
+            "ansible", 
+            "--version"
+        ], 
+        "delta": "0:00:00.150935", 
+        "end": "2017-08-09 22:20:00.919566", 
+        "rc": 0, 
+        "start": "2017-08-09 22:20:00.768631", 
+        "stderr": "", 
+        "stdout": "ansible 2.2.1.0\n  config file = /root/debian_bootstrap/ansible.cfg\n  configured module search path = Default w/o overrides", 
+        "stdout_lines": [
+            "ansible 2.2.1.0", 
+            "  config file = /root/debian_bootstrap/ansible.cfg", 
+            "  configured module search path = Default w/o overrides"
+        ], 
+        "warnings": []
+    }
+}
+2017-08-09 22:20:00,974 p=20367 u=root |  TASK [Upgrade_Ansible_To_A_Less_Sucky_Version] *********************************
+2017-08-09 22:20:02,632 p=20367 u=root |  ok: [localhost]
+2017-08-09 22:20:02,637 p=20367 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:20:02,682 p=20367 u=root |  ok: [localhost] => {
+    "upgrade_ansible_out": {
+        "cache_update_time": 1502331547, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:20:02,685 p=20367 u=root |  TASK [postcheck] ***************************************************************
+2017-08-09 22:20:03,031 p=20367 u=root |  changed: [localhost]
+2017-08-09 22:20:03,033 p=20367 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:20:03,033 p=20367 u=root |  localhost                  : ok=10   changed=2    unreachable=0    failed=0   
+2017-08-09 22:20:27,699 p=21392 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:20:27,712 p=21392 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:20:28,386 p=21392 u=root |  ok: [localhost]
+2017-08-09 22:20:28,390 p=21392 u=root |  TASK [Install_Debian8_Stable_Local_Repositories] *******************************
+2017-08-09 22:20:29,741 p=21392 u=root |  ok: [localhost]
+2017-08-09 22:20:29,745 p=21392 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:20:29,769 p=21392 u=root |  ok: [localhost] => {
+    "repo_out": {
+        "cache_update_time": 1502331547, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:20:29,771 p=21392 u=root |  TASK [Refresh_Apt_Package_Cache] ***********************************************
+2017-08-09 22:20:34,544 p=21392 u=root |  changed: [localhost]
+2017-08-09 22:20:34,548 p=21392 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:20:34,583 p=21392 u=root |  ok: [localhost] => {
+    "update_cache_out": {
+        "cache_update_time": 1502331633, 
+        "cache_updated": true, 
+        "changed": true
+    }
+}
+2017-08-09 22:20:34,585 p=21392 u=root |  TASK [precheck] ****************************************************************
+2017-08-09 22:20:34,936 p=21392 u=root |  changed: [localhost]
+2017-08-09 22:20:34,939 p=21392 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:20:34,963 p=21392 u=root |  ok: [localhost] => {
+    "a": {
+        "changed": true, 
+        "cmd": [
+            "ansible", 
+            "--version"
+        ], 
+        "delta": "0:00:00.154635", 
+        "end": "2017-08-09 22:20:34.920992", 
+        "rc": 0, 
+        "start": "2017-08-09 22:20:34.766357", 
+        "stderr": "", 
+        "stdout": "ansible 2.2.1.0\n  config file = /root/debian_bootstrap/ansible.cfg\n  configured module search path = Default w/o overrides", 
+        "stdout_lines": [
+            "ansible 2.2.1.0", 
+            "  config file = /root/debian_bootstrap/ansible.cfg", 
+            "  configured module search path = Default w/o overrides"
+        ], 
+        "warnings": []
+    }
+}
+2017-08-09 22:20:34,965 p=21392 u=root |  TASK [Upgrade_Ansible_To_A_Less_Sucky_Version] *********************************
+2017-08-09 22:20:36,562 p=21392 u=root |  ok: [localhost]
+2017-08-09 22:20:36,567 p=21392 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:20:36,591 p=21392 u=root |  ok: [localhost] => {
+    "upgrade_ansible_out": {
+        "cache_update_time": 1502331633, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:20:36,593 p=21392 u=root |  TASK [postcheck] ***************************************************************
+2017-08-09 22:20:36,894 p=21392 u=root |  changed: [localhost]
+2017-08-09 22:20:36,898 p=21392 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:20:36,928 p=21392 u=root |  ok: [localhost] => {
+    "b": {
+        "changed": true, 
+        "cmd": [
+            "ansible", 
+            "--version"
+        ], 
+        "delta": "0:00:00.158152", 
+        "end": "2017-08-09 22:20:36.874679", 
+        "rc": 0, 
+        "start": "2017-08-09 22:20:36.716527", 
+        "stderr": "", 
+        "stdout": "ansible 2.2.1.0\n  config file = /root/debian_bootstrap/ansible.cfg\n  configured module search path = Default w/o overrides", 
+        "stdout_lines": [
+            "ansible 2.2.1.0", 
+            "  config file = /root/debian_bootstrap/ansible.cfg", 
+            "  configured module search path = Default w/o overrides"
+        ], 
+        "warnings": []
+    }
+}
+2017-08-09 22:20:36,930 p=21392 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:20:36,930 p=21392 u=root |  localhost                  : ok=11   changed=3    unreachable=0    failed=0   
+2017-08-09 22:22:09,892 p=24446 u=root |   
+2017-08-09 22:22:09,892 p=24446 u=root |  /usr/bin/ansible-playbook -i localhost, --connection=local debian8_new_machine_upgrade.yml
+2017-08-09 22:22:09,892 p=24446 u=root |   
+2017-08-09 22:22:09,906 p=24446 u=root |  PLAY [all] ******************************************************************** 
+2017-08-09 22:22:09,906 p=24446 u=root |  GATHERING FACTS *************************************************************** 
+2017-08-09 22:22:10,624 p=24446 u=root |  ok: [localhost]
+2017-08-09 22:22:10,625 p=24446 u=root |  TASK: [Install_Debian8_Stable_Local_Repositories] ***************************** 
+2017-08-09 22:22:11,343 p=24446 u=root |  ok: [localhost]
+2017-08-09 22:22:11,344 p=24446 u=root |  TASK: [debug ] **************************************************************** 
+2017-08-09 22:22:11,348 p=24446 u=root |  ok: [localhost] => {
+    "repo_out": {
+        "changed": false, 
+        "invocation": {
+            "module_args": "package=repodeb8-debian,repodeb8-debian-backports,repodeb8-debian-security,repodeb8-debian-updates", 
+            "module_name": "apt"
+        }
+    }
+}
+2017-08-09 22:22:11,349 p=24446 u=root |  TASK: [Refresh_Apt_Package_Cache] ********************************************* 
+2017-08-09 22:22:15,851 p=24446 u=root |  ok: [localhost]
+2017-08-09 22:22:15,852 p=24446 u=root |  TASK: [debug ] **************************************************************** 
+2017-08-09 22:22:15,857 p=24446 u=root |  ok: [localhost] => {
+    "update_cache_out": {
+        "changed": false, 
+        "invocation": {
+            "module_args": "update_cache=yes cache_valid_time=60", 
+            "module_name": "apt"
+        }
+    }
+}
+2017-08-09 22:22:15,857 p=24446 u=root |  TASK: [precheck] ************************************************************** 
+2017-08-09 22:22:16,039 p=24548 u=root |  
+2017-08-09 22:22:16,039 p=24548 u=root |  /usr/bin/ansible --version
+2017-08-09 22:22:16,039 p=24548 u=root |  
+2017-08-09 22:22:16,058 p=24446 u=root |  changed: [localhost]
+2017-08-09 22:22:16,059 p=24446 u=root |  TASK: [debug ] **************************************************************** 
+2017-08-09 22:22:16,064 p=24446 u=root |  ok: [localhost] => {
+    "a": {
+        "changed": true, 
+        "cmd": [
+            "ansible", 
+            "--version"
+        ], 
+        "delta": "0:00:00.127967", 
+        "end": "2017-08-09 22:22:16.048112", 
+        "invocation": {
+            "module_args": "ansible --version", 
+            "module_name": "command"
+        }, 
+        "rc": 0, 
+        "start": "2017-08-09 22:22:15.920145", 
+        "stderr": "", 
+        "stdout": "ansible 1.7.2", 
+        "stdout_lines": [
+            "ansible 1.7.2"
+        ]
+    }
+}
+2017-08-09 22:22:16,065 p=24446 u=root |  TASK: [Upgrade_Ansible_To_A_Less_Sucky_Version] ******************************* 
+2017-08-09 22:22:21,597 p=24446 u=root |  changed: [localhost]
+2017-08-09 22:22:21,598 p=24446 u=root |  TASK: [debug ] **************************************************************** 
+2017-08-09 22:22:21,602 p=24446 u=root |  ok: [localhost] => {
+    "upgrade_ansible_out": {
+        "changed": true, 
+        "invocation": {
+            "module_args": "package=ansible default_release=jessie-backports state=latest", 
+            "module_name": "apt"
+        }, 
+        "stderr": "", 
+        "stdout": "Reading package lists...\nBuilding dependency tree...\nReading state information...\nSuggested packages:\n  cowsay\nRecommended packages:\n  python-winrm\nThe following packages will be upgraded:\n  ansible\n1 upgraded, 0 newly installed, 0 to remove and 781 not upgraded.\nNeed to get 0 B/1,684 kB of archives.\nAfter this operation, 9,174 kB of additional disk space will be used.\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 411826 files and directories currently installed.)\r\nPreparing to unpack .../ansible_2.2.1.0-2~bpo8+1_all.deb ...\r\nUnpacking ansible (2.2.1.0-2~bpo8+1) over (1.7.2+dfsg-2) ...\r\nProcessing triggers for man-db (2.7.0.2-5) ...\r\nSetting up ansible (2.2.1.0-2~bpo8+1) ...\r\nInstalling new version of config file /etc/ansible/ansible.cfg ...\r\n", 
+        "stdout_lines": [
+            "Reading package lists...", 
+            "Building dependency tree...", 
+            "Reading state information...", 
+            "Suggested packages:", 
+            "  cowsay", 
+            "Recommended packages:", 
+            "  python-winrm", 
+            "The following packages will be upgraded:", 
+            "  ansible", 
+            "1 upgraded, 0 newly installed, 0 to remove and 781 not upgraded.", 
+            "Need to get 0 B/1,684 kB of archives.", 
+            "After this operation, 9,174 kB of additional disk space will be used.", 
+            "(Reading database ... ", 
+            "(Reading database ... 5%", 
+            "(Reading database ... 10%", 
+            "(Reading database ... 15%", 
+            "(Reading database ... 20%", 
+            "(Reading database ... 25%", 
+            "(Reading database ... 30%", 
+            "(Reading database ... 35%", 
+            "(Reading database ... 40%", 
+            "(Reading database ... 45%", 
+            "(Reading database ... 50%", 
+            "(Reading database ... 55%", 
+            "(Reading database ... 60%", 
+            "(Reading database ... 65%", 
+            "(Reading database ... 70%", 
+            "(Reading database ... 75%", 
+            "(Reading database ... 80%", 
+            "(Reading database ... 85%", 
+            "(Reading database ... 90%", 
+            "(Reading database ... 95%", 
+            "(Reading database ... 100%", 
+            "(Reading database ... 411826 files and directories currently installed.)", 
+            "Preparing to unpack .../ansible_2.2.1.0-2~bpo8+1_all.deb ...", 
+            "Unpacking ansible (2.2.1.0-2~bpo8+1) over (1.7.2+dfsg-2) ...", 
+            "Processing triggers for man-db (2.7.0.2-5) ...", 
+            "Setting up ansible (2.2.1.0-2~bpo8+1) ...", 
+            "Installing new version of config file /etc/ansible/ansible.cfg ..."
+        ]
+    }
+}
+2017-08-09 22:22:21,602 p=24446 u=root |  TASK: [postcheck] ************************************************************* 
+2017-08-09 22:22:21,604 p=24446 u=root |  fatal: [localhost] => Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/ansible/runner/__init__.py", line 561, in _executor
+  File "/usr/lib/python2.7/dist-packages/ansible/runner/__init__.py", line 666, in _executor_internal
+  File "/usr/lib/python2.7/dist-packages/ansible/runner/__init__.py", line 884, in _executor_internal_inner
+  File "/usr/lib/python2.7/dist-packages/ansible/runner/action_plugins/normal.py", line 57, in run
+  File "/usr/lib/python2.7/dist-packages/ansible/runner/__init__.py", line 442, in _execute_module
+  File "/usr/lib/python2.7/dist-packages/ansible/runner/__init__.py", line 1151, in _configure_module
+  File "/usr/lib/python2.7/dist-packages/ansible/module_common.py", line 142, in modify_module
+IOError: [Errno 2] No such file or directory: '/usr/share/ansible/commands/command'
+
+2017-08-09 22:22:21,604 p=24446 u=root |  FATAL: all hosts have already failed -- aborting
+2017-08-09 22:22:21,604 p=24446 u=root |  PLAY RECAP ******************************************************************** 
+2017-08-09 22:22:21,605 p=24446 u=root |             to retry, use: --limit @/root/debian8_new_machine_upgrade.retry
+
+2017-08-09 22:22:21,605 p=24446 u=root |  localhost                  : ok=9    changed=2    unreachable=1    failed=0   
+2017-08-09 22:22:43,302 p=25164 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:22:43,316 p=25164 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:22:43,979 p=25164 u=root |  ok: [localhost]
+2017-08-09 22:22:43,984 p=25164 u=root |  TASK [Install_Debian8_Stable_Local_Repositories] *******************************
+2017-08-09 22:22:45,348 p=25164 u=root |  ok: [localhost]
+2017-08-09 22:22:45,353 p=25164 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:22:45,402 p=25164 u=root |  ok: [localhost] => {
+    "repo_out": {
+        "cache_update_time": 1502331735, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:22:45,407 p=25164 u=root |  TASK [Refresh_Apt_Package_Cache] ***********************************************
+2017-08-09 22:22:46,491 p=25164 u=root |  ok: [localhost]
+2017-08-09 22:22:46,496 p=25164 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:22:46,593 p=25164 u=root |  ok: [localhost] => {
+    "update_cache_out": {
+        "cache_update_time": 1502331735, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:22:46,598 p=25164 u=root |  TASK [precheck] ****************************************************************
+2017-08-09 22:22:47,011 p=25164 u=root |  changed: [localhost]
+2017-08-09 22:22:47,016 p=25164 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:22:47,065 p=25164 u=root |  ok: [localhost] => {
+    "a": {
+        "changed": true, 
+        "cmd": [
+            "ansible", 
+            "--version"
+        ], 
+        "delta": "0:00:00.192610", 
+        "end": "2017-08-09 22:22:46.987587", 
+        "rc": 0, 
+        "start": "2017-08-09 22:22:46.794977", 
+        "stderr": "", 
+        "stdout": "ansible 2.2.1.0\n  config file = /root/debian_bootstrap/ansible.cfg\n  configured module search path = Default w/o overrides", 
+        "stdout_lines": [
+            "ansible 2.2.1.0", 
+            "  config file = /root/debian_bootstrap/ansible.cfg", 
+            "  configured module search path = Default w/o overrides"
+        ], 
+        "warnings": []
+    }
+}
+2017-08-09 22:22:47,069 p=25164 u=root |  TASK [Upgrade_Ansible_To_A_Less_Sucky_Version] *********************************
+2017-08-09 22:22:48,689 p=25164 u=root |  ok: [localhost]
+2017-08-09 22:22:48,694 p=25164 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:22:48,746 p=25164 u=root |  ok: [localhost] => {
+    "upgrade_ansible_out": {
+        "cache_update_time": 1502331735, 
+        "cache_updated": false, 
+        "changed": false
+    }
+}
+2017-08-09 22:22:48,750 p=25164 u=root |  TASK [postcheck] ***************************************************************
+2017-08-09 22:22:49,115 p=25164 u=root |  changed: [localhost]
+2017-08-09 22:22:49,120 p=25164 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:22:49,171 p=25164 u=root |  ok: [localhost] => {
+    "b": {
+        "changed": true, 
+        "cmd": [
+            "ansible", 
+            "--version"
+        ], 
+        "delta": "0:00:00.231274", 
+        "end": "2017-08-09 22:22:49.088291", 
+        "rc": 0, 
+        "start": "2017-08-09 22:22:48.857017", 
+        "stderr": "", 
+        "stdout": "ansible 2.2.1.0\n  config file = /root/debian_bootstrap/ansible.cfg\n  configured module search path = Default w/o overrides", 
+        "stdout_lines": [
+            "ansible 2.2.1.0", 
+            "  config file = /root/debian_bootstrap/ansible.cfg", 
+            "  configured module search path = Default w/o overrides"
+        ], 
+        "warnings": []
+    }
+}
+2017-08-09 22:22:49,174 p=25164 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:22:49,174 p=25164 u=root |  localhost                  : ok=11   changed=2    unreachable=0    failed=0   
+2017-08-09 22:29:05,615 p=32667 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:29:05,629 p=32667 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:29:06,371 p=32667 u=root |  ok: [localhost]
+2017-08-09 22:29:06,374 p=32667 u=root |  TASK [Upgrade_Debian8] *********************************************************
+2017-08-09 22:29:07,016 p=32667 u=root |  fatal: [localhost]: FAILED! => {"changed": false, "failed": true, "msg": "unsupported parameter for module: register"}
+2017-08-09 22:29:07,017 p=32667 u=root |  	to retry, use: --limit @/root/debian_bootstrap/debian8_new_machine_upgrade.retry
+
+2017-08-09 22:29:07,017 p=32667 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:29:07,017 p=32667 u=root |  localhost                  : ok=1    changed=0    unreachable=0    failed=1   
+2017-08-09 22:29:59,008 p=513 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:29:59,022 p=513 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:29:59,704 p=513 u=root |  ok: [localhost]
+2017-08-09 22:29:59,707 p=513 u=root |  TASK [Upgrade_Debian8] *********************************************************
+2017-08-09 22:30:55,514 p=513 u=root |  fatal: [localhost]: FAILED! => {"changed": false, "failed": true, "msg": "'/usr/bin/apt-get dist-upgrade' failed: \rExtracting templates from packages: 5%\rExtracting templates from packages: 10%\rExtracting templates from packages: 15%\rExtracting templates from packages: 20%\rExtracting templates from packages: 25%\rExtracting templates from packages: 30%\rExtracting templates from packages: 35%\rExtracting templates from packages: 40%\rExtracting templates from packages: 45%\rExtracting templates from packages: 50%\rExtracting templates from packages: 55%\rExtracting templates from packages: 60%\rExtracting templates from packages: 65%\rExtracting templates from packages: 70%\rExtracting templates from packages: 76%\rExtracting templates from packages: 81%\rExtracting templates from packages: 86%\rExtracting templates from packages: 91%\rExtracting templates from packages: 96%\rExtracting templates from packages: 100%\nE: Sub-process /usr/bin/dpkg returned an error code (1)\n", "stdout": "Reading package lists...\nBuilding dependency tree...\nReading state information...\nThe following packages will be REMOVED:\n  g1534733glibc\nThe following NEW packages will be installed:\n  firefox-esr libjsoncpp0 lightning thunderbird\nThe following packages will be upgraded:\n  apache2 apache2-bin apache2-data apache2-utils apt apt-doc\n  apt-transport-https apt-utils ark atril atril-common autofs5 automake\n  bash-doc bind9-host binutils binutils-doc bsh-doc ca-certificates ccache\n  chromium cpio curl dbus dbus-x11 debconf debconf-doc debconf-i18n\n  debconf-utils debhelper debian-archive-keyring debootstrap dietlibc-doc\n  dmsetup dnsutils dpkg-dev eject erlang-doc evince evince-common\n  evolution-data-server evolution-data-server-common file flashplugin-nonfree\n  flex flex-doc fontconfig fontconfig-config fonts-opensymbol fuse ghostscript\n  ghostscript-x gimp gimp-data gir1.2-evince-3.0 gir1.2-gdkpixbuf-2.0\n  gir1.2-gst-plugins-base-1.0 gir1.2-gstreamer-1.0 gir1.2-gtk-2.0\n  gir1.2-polkit-1.0 git git-doc git-gui git-man git-svn gitk glibc-doc\n  gnome-maps gnome-media gnome-screenshot gnome-settings-daemon\n  gnome-shell-extension-weather gnome-sudoku gnupg gnupg-agent gnupg2 gpgv\n  gstreamer0.10-gconf gstreamer0.10-plugins-bad gstreamer0.10-plugins-good\n  gstreamer1.0-alsa gstreamer1.0-plugins-bad gstreamer1.0-plugins-base\n  gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-base-dbg\n  gstreamer1.0-plugins-good gstreamer1.0-plugins-good-dbg\n  gstreamer1.0-plugins-ugly gstreamer1.0-pulseaudio gstreamer1.0-tools\n  gstreamer1.0-x gtk2-engines-pixbuf guile-2.0-libs icedove iceweasel\n  icu-devtools imagemagick imagemagick-6.q16 imagemagick-common\n  initramfs-tools kdelibs-bin kdelibs5-data kdelibs5-plugins\n  kdepimlibs-kio-plugins kdoctools krb5-user ldap-utils libakonadi-calendar4\n  libakonadi-contact4 libakonadi-kabc4 libakonadi-kcal4 libakonadi-kde4\n  libakonadi-kmime4 libakonadi-notes4 libakonadiprotocolinternals1\n  libapt-inst1.5 libapt-pkg-doc libapt-pkg4.12 libarchive13 libasn1-8-heimdal\n  libatrildocument3 libatrilview3 libavcodec56 libavcodec56:i386 libavformat56\n  libavresample2 libavresample2:i386 libavutil54 libavutil54:i386 libbind9-90\n  libc-ares2 libc-bin libc-dev-bin libc6 libc6:i386 libc6-dbg libc6-dev\n  libc6-dev-i386 libc6-dev-x32 libc6-i386 libc6-x32 libcairo-gobject2\n  libcairo-script-interpreter2 libcairo2 libcairo2-dev libcairo2-doc\n  libcamel-1.2-49 libcfitsio2 libcomerr2 libcurl3 libcurl3-gnutls\n  libcurl4-openssl-dev libdbus-1-3 libdbus-1-3:i386 libdbus-1-dev\n  libdevmapper1.02.1 libdns-export100 libdns100 libdpkg-perl libdvdnav4\n  libebackend-1.2-7 libebml4 libebook-1.2-14 libebook-contacts-1.2-0\n  libecal-1.2-16 libedata-book-1.2-20 libedata-cal-1.2-23\n  libedataserver-1.2-18 libevdocument3-4 libevent-2.0-5 libevview3-3 libexpat1\n  libexpat1:i386 libexpat1-dev libffi6 libffi6:i386 libfl-dev libfontconfig1\n  libfontconfig1-dev libfreerdp-cache1.1 libfreerdp-client1.1\n  libfreerdp-codec1.1 libfreerdp-common1.1.0 libfreerdp-core1.1\n  libfreerdp-crypto1.1 libfreerdp-gdi1.1 libfreerdp-locale1.1\n  libfreerdp-plugins-standard libfreerdp-primitives1.1 libfreerdp-rail1.1\n  libfreerdp-utils1.1 libfreetype6 libfreetype6:i386 libfreetype6-dev\n  libfuse-dev libfuse2 libgail-common libgail18 libgcrypt20 libgcrypt20:i386\n  libgd3 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgdk-pixbuf2.0-dev\n  libgif4 libgimp2.0 libgimp2.0-doc libglib2.0-0 libglib2.0-0:i386\n  libglib2.0-bin libglib2.0-dev libgme0 libgnutls-deb0-28\n  libgnutls-deb0-28:i386 libgnutls-openssl27 libgpgme++2 libgraphicsmagick++3\n  libgraphicsmagick3 libgraphite2-3 libgs9 libgs9-common libgssapi-krb5-2\n  libgssapi3-heimdal libgssrpc4 libgstreamer-plugins-bad0.10-0\n  libgstreamer-plugins-bad1.0-0 libgstreamer-plugins-base1.0-0\n  libgstreamer-plugins-base1.0-dev libgstreamer1.0-0 libgstreamer1.0-0-dbg\n  libgstreamer1.0-dev libgtk2.0-0 libgtk2.0-bin libgtk2.0-common libgtk2.0-dev\n  libgtk2.0-doc libgudev-1.0-0 libhcrypto4-heimdal libheimbase1-heimdal\n  libheimntlm0-heimdal libhogweed2 libhogweed2:i386 libhx509-5-heimdal\n  libicu-dev libicu52 libidn11 libindicate5 libintl-perl libio-socket-ssl-perl\n  libirs-export91 libisc-export95 libisc95 libisccc90 libisccfg-export90\n  libisccfg90 libjansson4 libjasper1 libjbig2dec0 libk5crypto3 libkabc4\n  libkadm5clnt-mit9 libkadm5srv-mit9 libkalarmcal2 libkcal4 libkcalcore4\n  libkcalutils4 libkcmutils4 libkdb5-7 libkde3support4 libkdeclarative5\n  libkdecore5 libkdesu5 libkdeui5 libkdewebkit5 libkdnssd4 libkemoticons4\n  libkfile4 libkholidays4 libkhtml5 libkidletime4 libkimap4 libkio5 libkjsapi4\n  libkjsembed4 libkldap4 libkmbox4 libkmediaplayer4 libkmime4 libknewstuff2-4\n  libknewstuff3-4 libknotifyconfig4 libkntlm4 libkontactinterface4a libkparts4\n  libkpimidentities4 libkpimtextedit4 libkpimutils4 libkprintutils4 libkpty4\n  libkrb5-26-heimdal libkrb5-3 libkrb5support0 libkresources4 libkrosscore4\n  libksba8 libktexteditor4 libktnef4 libkunitconversion4 libkxmlrpcclient4\n  liblcms2-2 liblcms2-2:i386 libldap-2.4-2 libldap-2.4-2:i386 libldb1\n  libltdl-dev libltdl7 liblwres90 libmagic1 libmagick++-6.q16-5\n  libmagickcore-6.q16-2 libmagickwand-6.q16-2 libmailtransport4\n  libmateweather-common libmateweather1 libmatroska6 libmicroblog4 libmpg123-0\n  libmpg123-0:i386 libmwaw-0.3-3 libmysqlclient18 libndp0 libnepomuk4\n  libnepomukquery4a libnepomukutils4 libnet-dns-perl libnet-ssleay-perl\n  libnettle4 libnettle4:i386 libnspr4 libnspr4-dev libnss3 libnss3-dev libotr5\n  libpam-modules libpam-modules-bin libpam-runtime libpam-systemd libpam0g\n  libpam0g-dev libpcre3 libpcre3:i386 libpcre3-dev libpcrecpp0 libpcsclite1\n  libperl5.20 libplasma3 libpng12-0 libpng12-0:i386 libpng12-dev libpng3\n  libpolkit-agent-1-0 libpolkit-backend-1-0 libpolkit-gobject-1-0\n  libpoppler-glib8 libpoppler-qt4-4 libpoppler46 libpq5 libpurple0\n  libpython2.7 libpython2.7-dev libpython2.7-minimal libpython2.7-stdlib\n  libqgpgme1 librados2 librbd1 libreoffice-base libreoffice-base-core\n  libreoffice-base-drivers libreoffice-calc libreoffice-common\n  libreoffice-core libreoffice-draw libreoffice-evolution libreoffice-gnome\n  libreoffice-gtk libreoffice-impress libreoffice-style-galaxy\n  libreoffice-writer libroken18-heimdal librsvg2-2 librsvg2-common librtmp1\n  libruby2.1 libsane libsane-common libsmbclient libsndfile1 libsndfile1:i386\n  libsndfile1-dev libsolid4 libspice-server1 libsqlite3-0 libsrtp0 libss2\n  libssh-4 libssh-gcrypt-4 libssh2-1 libssl-dev libssl1.0.0 libssl1.0.0:i386\n  libsvn-perl libsvn1 libswscale3 libsyndication4 libsystemd0 libsystemd0:i386\n  libtalloc2 libtasn1-3-bin libtasn1-6 libtasn1-6:i386 libtasn1-bin libtdb1\n  libtevent0 libthreadweaver4 libtiff5 libtirpc1 libtre5 libudev-dev libudev1\n  libudev1:i386 libupnp6 libvirt0 libvlc5 libvlccore8 libvncclient0\n  libvncserver0 libwbclient0 libwind0-heimdal libwinpr-crt0.1\n  libwinpr-crypto0.1 libwinpr-dsparse0.1 libwinpr-environment0.1\n  libwinpr-file0.1 libwinpr-handle0.1 libwinpr-heap0.1 libwinpr-input0.1\n  libwinpr-interlocked0.1 libwinpr-library0.1 libwinpr-path0.1\n  libwinpr-pool0.1 libwinpr-registry0.1 libwinpr-rpc0.1 libwinpr-sspi0.1\n  libwinpr-synch0.1 libwinpr-sysinfo0.1 libwinpr-thread0.1 libwinpr-utils0.1\n  libwireshark-data libwireshark5 libwiretap4 libwmf0.2-7 libwsutil4\n  libxapian22 libxen-4.4 libxenstore3.0 libxerces-c3.1 libxml2 libxml2:i386\n  libxml2-dev libxml2-doc libxml2-utils libxpm-dev libxpm4 libxslt1.1\n  libytnef0 linux-libc-dev linux-libc-dev:i386 locales locales-all login\n  mariadb-client-10.0 mariadb-client-core-10.0 mariadb-common mariadb-server\n  mariadb-server-10.0 mariadb-server-core-10.0 multiarch-support myspell-en-us\n  mysql-common mythes-en-us nmap nscd ntp ntp-doc ntpdate openjdk-7-jdk\n  openjdk-7-jre openjdk-7-jre-headless openssh-client openssh-server\n  openssh-sftp-server openssl os-prober p7zip-full passwd perl perl-base\n  perl-doc perl-modules pidgin pidgin-data policykit-1 poppler-utils\n  python-crypto python-cryptography python-imaging python-imaging-tk\n  python-libxml2 python-pil python-pil-doc python-pil.imagetk\n  python-subversion python-talloc python2.7 python2.7-dev python2.7-doc\n  python2.7-minimal qemu qemu-system qemu-system-arm qemu-system-common\n  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-sparc\n  qemu-system-x86 qemu-user qemu-user-static qemu-utils quota rdesktop rpcbind\n  samba-libs sed sendmail sendmail-base sendmail-bin sendmail-cf sendmail-doc\n  sensible-mda subversion subversion-tools sudo systemd systemd-sysv tar\n  tcpdump tshark tzdata tzdata-java udev uno-libs3 unzip ure vim vim-common\n  vim-doc vim-gnome vim-gtk vim-gui-common vim-runtime vim-tiny vlc vlc-data\n  vlc-nox vlc-plugin-pulse vorbis-tools w3m wget wireshark wireshark-common\n  wpasupplicant xserver-common xserver-xorg-core xserver-xorg-dev xsltproc\n  xvfb xwayland\n588 upgraded, 4 newly installed, 1 to remove and 0 not upgraded.\nNeed to get 35.6 MB/790 MB of archives.\nAfter this operation, 226 MB of additional disk space will be used.\nGet:1 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc6-i386 amd64 2.19-18+deb8u10 [2380 kB]\nGet:2 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc-dev-bin amd64 2.19-18+deb8u10 [238 kB]\nGet:3 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc6-dev amd64 2.19-18+deb8u10 [2003 kB]\nGet:4 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc6-dev-i386 amd64 2.19-18+deb8u10 [1319 kB]\nGet:5 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc6-dev-x32 amd64 2.19-18+deb8u10 [1587 kB]\nGet:6 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc6-x32 amd64 2.19-18+deb8u10 [2606 kB]\nGet:7 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc6-dbg amd64 2.19-18+deb8u10 [3431 kB]\nGet:8 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc-bin amd64 2.19-18+deb8u10 [1281 kB]\nGet:9 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc6 i386 2.19-18+deb8u10 [3983 kB]\nGet:10 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc6 amd64 2.19-18+deb8u10 [4665 kB]\nGet:11 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libroken18-heimdal amd64 1.6~rc2+dfsg-9+deb8u1 [63.2 kB]\nGet:12 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libasn1-8-heimdal amd64 1.6~rc2+dfsg-9+deb8u1 [205 kB]\nGet:13 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libhcrypto4-heimdal amd64 1.6~rc2+dfsg-9+deb8u1 [110 kB]\nGet:14 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libheimbase1-heimdal amd64 1.6~rc2+dfsg-9+deb8u1 [51.8 kB]\nGet:15 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libwind0-heimdal amd64 1.6~rc2+dfsg-9+deb8u1 [71.5 kB]\nGet:16 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libhx509-5-heimdal amd64 1.6~rc2+dfsg-9+deb8u1 [131 kB]\nGet:17 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libkrb5-26-heimdal amd64 1.6~rc2+dfsg-9+deb8u1 [228 kB]\nGet:18 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libheimntlm0-heimdal amd64 1.6~rc2+dfsg-9+deb8u1 [38.7 kB]\nGet:19 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libgssapi3-heimdal amd64 1.6~rc2+dfsg-9+deb8u1 [118 kB]\nGet:20 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libxerces-c3.1 amd64 3.1.1-5.1+deb8u3 [865 kB]\nGet:21 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main multiarch-support amd64 2.19-18+deb8u10 [181 kB]\nGet:22 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main locales-all amd64 2.19-18+deb8u10 [3214 kB]\nGet:23 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main locales all 2.19-18+deb8u10 [3930 kB]\nGet:24 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main glibc-doc all 2.19-18+deb8u10 [2270 kB]\nGet:25 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libakonadiprotocolinternals1 amd64 1.13.0-2+deb8u2 [74.7 kB]\nGet:26 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libakonadi-kabc4 amd64 4:4.14.2-2+deb8u2 [18.2 kB]\nGet:27 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libkontactinterface4a amd64 4:4.14.2-2+deb8u2 [43.7 kB]\nGet:28 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libotr5 amd64 4.1.0-2+deb8u1 [85.3 kB]\nGet:29 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libsyndication4 amd64 4:4.14.2-2+deb8u2 [205 kB]\nGet:30 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main nscd amd64 2.19-18+deb8u10 [244 kB]\nPreconfiguring packages ...\nFetched 35.6 MB in 3s (9732 kB/s)\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 412816 files and directories currently installed.)\r\nPreparing to unpack .../login_1%3a4.2-3+deb8u4_amd64.deb ...\r\nUnpacking login (1:4.2-3+deb8u4) over (1:4.2-3+deb8u1) ...\r\nProcessing triggers for man-db (2.7.0.2-5) ...\r\nSetting up login (1:4.2-3+deb8u4) ...\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 412816 files and directories currently installed.)\r\nPreparing to unpack .../perl_5.20.2-3+deb8u8_amd64.deb ...\r\nUnpacking perl (5.20.2-3+deb8u8) over (5.20.2-3+deb8u3) ...\r\nPreparing to unpack .../libperl5.20_5.20.2-3+deb8u8_amd64.deb ...\r\nUnpacking libperl5.20 (5.20.2-3+deb8u8) over (5.20.2-3+deb8u3) ...\r\nPreparing to unpack .../perl-base_5.20.2-3+deb8u8_amd64.deb ...\r\nUnpacking perl-base (5.20.2-3+deb8u8) over (5.20.2-3+deb8u3) ...\r\nProcessing triggers for man-db (2.7.0.2-5) ...\r\nSetting up perl-base (5.20.2-3+deb8u8) ...\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 412817 files and directories currently installed.)\r\nPreparing to unpack .../perl-modules_5.20.2-3+deb8u8_all.deb ...\r\nUnpacking perl-modules (5.20.2-3+deb8u8) over (5.20.2-3+deb8u3) ...\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 412818 files and directories currently installed.)\r\nRemoving g1534733glibc (2.19-2) ...\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 412818 files and directories currently installed.)\r\nPreparing to unpack .../libcomerr2_1.42.12-2+b1_amd64.deb ...\r\nUnpacking libcomerr2:amd64 (1.42.12-2+b1) over (1.42.12-1.1) ...\r\nSetting up libcomerr2:amd64 (1.42.12-2+b1) ...\r\nProcessing triggers for libc-bin (2.19-18+deb8u7.tmw3) ...\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 412819 files and directories currently installed.)\r\nPreparing to unpack .../libk5crypto3_1.12.1+dfsg-19+deb8u2_amd64.deb ...\r\nUnpacking libk5crypto3:amd64 (1.12.1+dfsg-19+deb8u2) over (1.12.1+dfsg-19+deb8u1) ...\r\nPreparing to unpack .../libgssapi-krb5-2_1.12.1+dfsg-19+deb8u2_amd64.deb ...\r\nUnpacking libgssapi-krb5-2:amd64 (1.12.1+dfsg-19+deb8u2) over (1.12.1+dfsg-19+deb8u1) ...\r\nPreparing to unpack .../krb5-user_1.12.1+dfsg-19+deb8u2_amd64.deb ...\r\nUnpacking krb5-user (1.12.1+dfsg-19+deb8u2) over (1.12.1+dfsg-19+deb8u1) ...\r\nPreparing to unpack .../libkrb5-3_1.12.1+dfsg-19+deb8u2_amd64.deb ...\r\nUnpacking libkrb5-3:amd64 (1.12.1+dfsg-19+deb8u2) over (1.12.1+dfsg-19+deb8u1) ...\r\nPreparing to unpack .../libkrb5support0_1.12.1+dfsg-19+deb8u2_amd64.deb ...\r\nUnpacking libkrb5support0:amd64 (1.12.1+dfsg-19+deb8u2) over (1.12.1+dfsg-19+deb8u1) ...\r\nPreparing to unpack .../libgssrpc4_1.12.1+dfsg-19+deb8u2_amd64.deb ...\r\nUnpacking libgssrpc4:amd64 (1.12.1+dfsg-19+deb8u2) over (1.12.1+dfsg-19+deb8u1) ...\r\nPreparing to unpack .../libkadm5clnt-mit9_1.12.1+dfsg-19+deb8u2_amd64.deb ...\r\nUnpacking libkadm5clnt-mit9:amd64 (1.12.1+dfsg-19+deb8u2) over (1.12.1+dfsg-19+deb8u1) ...\r\nPreparing to unpack .../libkdb5-7_1.12.1+dfsg-19+deb8u2_amd64.deb ...\r\nUnpacking libkdb5-7:amd64 (1.12.1+dfsg-19+deb8u2) over (1.12.1+dfsg-19+deb8u1) ...\r\nPreparing to unpack .../libkadm5srv-mit9_1.12.1+dfsg-19+deb8u2_amd64.deb ...\r\nUnpacking libkadm5srv-mit9:amd64 (1.12.1+dfsg-19+deb8u2) over (1.12.1+dfsg-19+deb8u1) ...\r\nPreparing to unpack .../libss2_1.42.12-2+b1_amd64.deb ...\r\nUnpacking libss2:amd64 (1.42.12-2+b1) over (1.42.12-1.1) ...\r\nProcessing triggers for man-db (2.7.0.2-5) ...\r\nSetting up libss2:amd64 (1.42.12-2+b1) ...\r\nProcessing triggers for libc-bin (2.19-18+deb8u7.tmw3) ...\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 412820 files and directories currently installed.)\r\nPreparing to unpack .../libc6-i386_2.19-18+deb8u10_amd64.deb ...\r\nUnpacking libc6-i386 (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...\r\nReplaced by files in installed package libc6:i386 (2.19-18+deb8u7.tmw3) ...\r\nPreparing to unpack .../libc-dev-bin_2.19-18+deb8u10_amd64.deb ...\r\nUnpacking libc-dev-bin (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...\r\nPreparing to unpack .../libc6-dev_2.19-18+deb8u10_amd64.deb ...\r\nUnpacking libc6-dev:amd64 (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...\r\nPreparing to unpack .../libc6-dev-i386_2.19-18+deb8u10_amd64.deb ...\r\nUnpacking libc6-dev-i386 (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...\r\nPreparing to unpack .../libc6-dev-x32_2.19-18+deb8u10_amd64.deb ...\r\nUnpacking libc6-dev-x32 (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...\r\nPreparing to unpack .../libc6-x32_2.19-18+deb8u10_amd64.deb ...\r\nUnpacking libc6-x32 (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...\r\nPreparing to unpack .../libc6-dbg_2.19-18+deb8u10_amd64.deb ...\r\nUnpacking libc6-dbg:amd64 (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...\r\nPreparing to unpack .../rpcbind_0.2.1-6+deb8u2_amd64.deb ...\r\nUnpacking rpcbind (0.2.1-6+deb8u2) over (0.2.1-6+deb8u1) ...\r\nPreparing to unpack .../libc-bin_2.19-18+deb8u10_amd64.deb ...\r\nUnpacking libc-bin (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...\r\nProcessing triggers for man-db (2.7.0.2-5) ...\r\nProcessing triggers for systemd (215-17+deb8u3) ...\r\nSetting up libc-bin (2.19-18+deb8u10) ...\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 412820 files and directories currently installed.)\r\nPreparing to unpack .../libc6_2.19-18+deb8u10_amd64.deb ...\r\nDe-configuring libc6:i386 (2.19-18+deb8u7.tmw3) ...\r\nUnpacking libc6:amd64 (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...\r\nPreparing to unpack .../libc6_2.19-18+deb8u10_i386.deb ...\r\nUnpacking libc6:i386 (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...\r\nPreparing to unpack .../libtirpc1_0.2.5-1+deb8u1_amd64.deb ...\r\nUnpacking libtirpc1:amd64 (0.2.5-1+deb8u1) over (0.2.5-1) ...\r\nPreparing to unpack .../linux-libc-dev_3.16.43-2+deb8u2_amd64.deb ...\r\nDe-configuring linux-libc-dev:i386 (3.16.7-ckt20-1+deb8u2) ...\r\nUnpacking linux-libc-dev:amd64 (3.16.43-2+deb8u2) over (3.16.7-ckt20-1+deb8u2) ...\r\nPreparing to unpack .../linux-libc-dev_3.16.43-2+deb8u2_i386.deb ...\r\nUnpacking linux-libc-dev:i386 (3.16.43-2+deb8u2) over (3.16.7-ckt20-1+deb8u2) ...\r\nProcessing triggers for man-db (2.7.0.2-5) ...\r\nSetting up libc6:amd64 (2.19-18+deb8u10) ...\r\nSetting up libc6:i386 (2.19-18+deb8u10) ...\r\nProcessing triggers for libc-bin (2.19-18+deb8u10) ...\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 412820 files and directories currently installed.)\r\nPreparing to unpack .../sed_4.2.2-4+deb8u1_amd64.deb ...\r\nUnpacking sed (4.2.2-4+deb8u1) over (4.2.2-4+b1) ...\r\nProcessing triggers for man-db (2.7.0.2-5) ...\r\nProcessing triggers for install-info (5.2.0.dfsg.1-6) ...\r\nSetting up sed (4.2.2-4+deb8u1) ...\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 412820 files and directories currently installed.)\r\nPreparing to unpack .../tar_1.27.1-2+deb8u1_amd64.deb ...\r\nUnpacking tar (1.27.1-2+deb8u1) over (1.27.1-2+b1) ...\r\nProcessing triggers for mime-support (3.58) ...\r\nProcessing triggers for man-db (2.7.0.2-5) ...\r\nSetting up tar (1.27.1-2+deb8u1) ...\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 412819 files and directories currently installed.)\r\nPreparing to unpack .../libapt-pkg4.12_1.0.9.8.4_amd64.deb ...\r\nUnpacking libapt-pkg4.12:amd64 (1.0.9.8.4) over (1.0.9.8.2) ...\r\nSetting up libapt-pkg4.12:amd64 (1.0.9.8.4) ...\r\nProcessing triggers for libc-bin (2.19-18+deb8u10) ...\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 412819 files and directories currently installed.)\r\nPreparing to unpack .../gpgv_1.4.18-7+deb8u3_amd64.deb ...\r\nUnpacking gpgv (1.4.18-7+deb8u3) over (1.4.18-7) ...\r\nProcessing triggers for man-db (2.7.0.2-5) ...\r\nSetting up gpgv (1.4.18-7+deb8u3) ...\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 412819 files and directories currently installed.)\r\nPreparing to unpack .../debian-archive-keyring_2017.5~deb8u1_all.deb ...\r\nUnpacking debian-archive-keyring (2017.5~deb8u1) over (2014.3) ...\r\nSetting up debian-archive-keyring (2017.5~deb8u1) ...\r\nRemoving obsolete conffile /etc/apt/trusted.gpg.d/debian-archive-squeeze-automatic.gpg ...\r\nRemoving obsolete conffile /etc/apt/trusted.gpg.d/debian-archive-squeeze-stable.gpg ...\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 412820 files and directories currently installed.)\r\nPreparing to unpack .../gnupg_1.4.18-7+deb8u3_amd64.deb ...\r\nUnpacking gnupg (1.4.18-7+deb8u3) over (1.4.18-7) ...\r\nProcessing triggers for man-db (2.7.0.2-5) ...\r\nProcessing triggers for install-info (5.2.0.dfsg.1-6) ...\r\nSetting up gnupg (1.4.18-7+deb8u3) ...\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 412820 files and directories currently installed.)\r\nPreparing to unpack .../apt_1.0.9.8.4_amd64.deb ...\r\nUnpacking apt (1.0.9.8.4) over (1.0.9.8.2) ...\r\nProcessing triggers for man-db (2.7.0.2-5) ...\r\nSetting up apt (1.0.9.8.4) ...\r\nProcessing triggers for libc-bin (2.19-18+deb8u10) ...\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 412820 files and directories currently installed.)\r\nPreparing to unpack .../libudev1_215-17+deb8u7_amd64.deb ...\r\nDe-configuring libudev1:i386 (215-17+deb8u3) ...\r\nUnpacking libudev1:amd64 (215-17+deb8u7) over (215-17+deb8u3) ...\r\nPreparing to unpack .../libudev1_215-17+deb8u7_i386.deb ...\r\nUnpacking libudev1:i386 (215-17+deb8u7) over (215-17+deb8u3) ...\r\nPreparing to unpack .../udev_215-17+deb8u7_amd64.deb ...\r\nUnpacking udev (215-17+deb8u7) over (215-17+deb8u3) ...\r\nProcessing triggers for man-db (2.7.0.2-5) ...\r\nProcessing triggers for systemd (215-17+deb8u3) ...\r\nSetting up libudev1:amd64 (215-17+deb8u7) ...\r\nSetting up libudev1:i386 (215-17+deb8u7) ...\r\nSetting up udev (215-17+deb8u7) ...\r\naddgroup: The group `input' already exists as a system group. Exiting.\r\nupdate-initramfs: deferring update (trigger activated)\r\nProcessing triggers for libc-bin (2.19-18+deb8u10) ...\r\nProcessing triggers for initramfs-tools (0.120) ...\r\nupdate-initramfs: Generating /boot/initrd.img-4.4.0-0.bpo.tmw1-amd64\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 412820 files and directories currently installed.)\r\nPreparing to unpack .../libudev-dev_215-17+deb8u7_amd64.deb ...\r\nUnpacking libudev-dev:amd64 (215-17+deb8u7) over (215-17+deb8u3) ...\r\nPreparing to unpack .../initramfs-tools_0.120+deb8u3_all.deb ...\r\nUnpacking initramfs-tools (0.120+deb8u3) over (0.120) ...\r\nPreparing to unpack .../libsystemd0_215-17+deb8u7_amd64.deb ...\r\nDe-configuring libsystemd0:i386 (215-17+deb8u3) ...\r\nUnpacking libsystemd0:amd64 (215-17+deb8u7) over (215-17+deb8u3) ...\r\nPreparing to unpack .../libsystemd0_215-17+deb8u7_i386.deb ...\r\nUnpacking libsystemd0:i386 (215-17+deb8u7) over (215-17+deb8u3) ...\r\nPreparing to unpack .../systemd_215-17+deb8u7_amd64.deb ...\r\nUnpacking systemd (215-17+deb8u7) over (215-17+deb8u3) ...\r\nProcessing triggers for man-db (2.7.0.2-5) ...\r\nProcessing triggers for dbus (1.8.20-0+deb8u1) ...\r\nSetting up libsystemd0:amd64 (215-17+deb8u7) ...\r\nSetting up libsystemd0:i386 (215-17+deb8u7) ...\r\nSetting up systemd (215-17+deb8u7) ...\r\naddgroup: The group `systemd-journal' already exists as a system group. Exiting.\r\nadduser: The user `systemd-timesync' already exists. Exiting.\r\ndpkg: error processing package systemd (--configure):\r\n subprocess installed post-installation script returned error exit status 1\r\nProcessing triggers for libc-bin (2.19-18+deb8u10) ...\r\nErrors were encountered while processing:\r\n systemd\r\n", "stdout_lines": ["Reading package lists...", "Building dependency tree...", "Reading state information...", "The following packages will be REMOVED:", "  g1534733glibc", "The following NEW packages will be installed:", "  firefox-esr libjsoncpp0 lightning thunderbird", "The following packages will be upgraded:", "  apache2 apache2-bin apache2-data apache2-utils apt apt-doc", "  apt-transport-https apt-utils ark atril atril-common autofs5 automake", "  bash-doc bind9-host binutils binutils-doc bsh-doc ca-certificates ccache", "  chromium cpio curl dbus dbus-x11 debconf debconf-doc debconf-i18n", "  debconf-utils debhelper debian-archive-keyring debootstrap dietlibc-doc", "  dmsetup dnsutils dpkg-dev eject erlang-doc evince evince-common", "  evolution-data-server evolution-data-server-common file flashplugin-nonfree", "  flex flex-doc fontconfig fontconfig-config fonts-opensymbol fuse ghostscript", "  ghostscript-x gimp gimp-data gir1.2-evince-3.0 gir1.2-gdkpixbuf-2.0", "  gir1.2-gst-plugins-base-1.0 gir1.2-gstreamer-1.0 gir1.2-gtk-2.0", "  gir1.2-polkit-1.0 git git-doc git-gui git-man git-svn gitk glibc-doc", "  gnome-maps gnome-media gnome-screenshot gnome-settings-daemon", "  gnome-shell-extension-weather gnome-sudoku gnupg gnupg-agent gnupg2 gpgv", "  gstreamer0.10-gconf gstreamer0.10-plugins-bad gstreamer0.10-plugins-good", "  gstreamer1.0-alsa gstreamer1.0-plugins-bad gstreamer1.0-plugins-base", "  gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-base-dbg", "  gstreamer1.0-plugins-good gstreamer1.0-plugins-good-dbg", "  gstreamer1.0-plugins-ugly gstreamer1.0-pulseaudio gstreamer1.0-tools", "  gstreamer1.0-x gtk2-engines-pixbuf guile-2.0-libs icedove iceweasel", "  icu-devtools imagemagick imagemagick-6.q16 imagemagick-common", "  initramfs-tools kdelibs-bin kdelibs5-data kdelibs5-plugins", "  kdepimlibs-kio-plugins kdoctools krb5-user ldap-utils libakonadi-calendar4", "  libakonadi-contact4 libakonadi-kabc4 libakonadi-kcal4 libakonadi-kde4", "  libakonadi-kmime4 libakonadi-notes4 libakonadiprotocolinternals1", "  libapt-inst1.5 libapt-pkg-doc libapt-pkg4.12 libarchive13 libasn1-8-heimdal", "  libatrildocument3 libatrilview3 libavcodec56 libavcodec56:i386 libavformat56", "  libavresample2 libavresample2:i386 libavutil54 libavutil54:i386 libbind9-90", "  libc-ares2 libc-bin libc-dev-bin libc6 libc6:i386 libc6-dbg libc6-dev", "  libc6-dev-i386 libc6-dev-x32 libc6-i386 libc6-x32 libcairo-gobject2", "  libcairo-script-interpreter2 libcairo2 libcairo2-dev libcairo2-doc", "  libcamel-1.2-49 libcfitsio2 libcomerr2 libcurl3 libcurl3-gnutls", "  libcurl4-openssl-dev libdbus-1-3 libdbus-1-3:i386 libdbus-1-dev", "  libdevmapper1.02.1 libdns-export100 libdns100 libdpkg-perl libdvdnav4", "  libebackend-1.2-7 libebml4 libebook-1.2-14 libebook-contacts-1.2-0", "  libecal-1.2-16 libedata-book-1.2-20 libedata-cal-1.2-23", "  libedataserver-1.2-18 libevdocument3-4 libevent-2.0-5 libevview3-3 libexpat1", "  libexpat1:i386 libexpat1-dev libffi6 libffi6:i386 libfl-dev libfontconfig1", "  libfontconfig1-dev libfreerdp-cache1.1 libfreerdp-client1.1", "  libfreerdp-codec1.1 libfreerdp-common1.1.0 libfreerdp-core1.1", "  libfreerdp-crypto1.1 libfreerdp-gdi1.1 libfreerdp-locale1.1", "  libfreerdp-plugins-standard libfreerdp-primitives1.1 libfreerdp-rail1.1", "  libfreerdp-utils1.1 libfreetype6 libfreetype6:i386 libfreetype6-dev", "  libfuse-dev libfuse2 libgail-common libgail18 libgcrypt20 libgcrypt20:i386", "  libgd3 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgdk-pixbuf2.0-dev", "  libgif4 libgimp2.0 libgimp2.0-doc libglib2.0-0 libglib2.0-0:i386", "  libglib2.0-bin libglib2.0-dev libgme0 libgnutls-deb0-28", "  libgnutls-deb0-28:i386 libgnutls-openssl27 libgpgme++2 libgraphicsmagick++3", "  libgraphicsmagick3 libgraphite2-3 libgs9 libgs9-common libgssapi-krb5-2", "  libgssapi3-heimdal libgssrpc4 libgstreamer-plugins-bad0.10-0", "  libgstreamer-plugins-bad1.0-0 libgstreamer-plugins-base1.0-0", "  libgstreamer-plugins-base1.0-dev libgstreamer1.0-0 libgstreamer1.0-0-dbg", "  libgstreamer1.0-dev libgtk2.0-0 libgtk2.0-bin libgtk2.0-common libgtk2.0-dev", "  libgtk2.0-doc libgudev-1.0-0 libhcrypto4-heimdal libheimbase1-heimdal", "  libheimntlm0-heimdal libhogweed2 libhogweed2:i386 libhx509-5-heimdal", "  libicu-dev libicu52 libidn11 libindicate5 libintl-perl libio-socket-ssl-perl", "  libirs-export91 libisc-export95 libisc95 libisccc90 libisccfg-export90", "  libisccfg90 libjansson4 libjasper1 libjbig2dec0 libk5crypto3 libkabc4", "  libkadm5clnt-mit9 libkadm5srv-mit9 libkalarmcal2 libkcal4 libkcalcore4", "  libkcalutils4 libkcmutils4 libkdb5-7 libkde3support4 libkdeclarative5", "  libkdecore5 libkdesu5 libkdeui5 libkdewebkit5 libkdnssd4 libkemoticons4", "  libkfile4 libkholidays4 libkhtml5 libkidletime4 libkimap4 libkio5 libkjsapi4", "  libkjsembed4 libkldap4 libkmbox4 libkmediaplayer4 libkmime4 libknewstuff2-4", "  libknewstuff3-4 libknotifyconfig4 libkntlm4 libkontactinterface4a libkparts4", "  libkpimidentities4 libkpimtextedit4 libkpimutils4 libkprintutils4 libkpty4", "  libkrb5-26-heimdal libkrb5-3 libkrb5support0 libkresources4 libkrosscore4", "  libksba8 libktexteditor4 libktnef4 libkunitconversion4 libkxmlrpcclient4", "  liblcms2-2 liblcms2-2:i386 libldap-2.4-2 libldap-2.4-2:i386 libldb1", "  libltdl-dev libltdl7 liblwres90 libmagic1 libmagick++-6.q16-5", "  libmagickcore-6.q16-2 libmagickwand-6.q16-2 libmailtransport4", "  libmateweather-common libmateweather1 libmatroska6 libmicroblog4 libmpg123-0", "  libmpg123-0:i386 libmwaw-0.3-3 libmysqlclient18 libndp0 libnepomuk4", "  libnepomukquery4a libnepomukutils4 libnet-dns-perl libnet-ssleay-perl", "  libnettle4 libnettle4:i386 libnspr4 libnspr4-dev libnss3 libnss3-dev libotr5", "  libpam-modules libpam-modules-bin libpam-runtime libpam-systemd libpam0g", "  libpam0g-dev libpcre3 libpcre3:i386 libpcre3-dev libpcrecpp0 libpcsclite1", "  libperl5.20 libplasma3 libpng12-0 libpng12-0:i386 libpng12-dev libpng3", "  libpolkit-agent-1-0 libpolkit-backend-1-0 libpolkit-gobject-1-0", "  libpoppler-glib8 libpoppler-qt4-4 libpoppler46 libpq5 libpurple0", "  libpython2.7 libpython2.7-dev libpython2.7-minimal libpython2.7-stdlib", "  libqgpgme1 librados2 librbd1 libreoffice-base libreoffice-base-core", "  libreoffice-base-drivers libreoffice-calc libreoffice-common", "  libreoffice-core libreoffice-draw libreoffice-evolution libreoffice-gnome", "  libreoffice-gtk libreoffice-impress libreoffice-style-galaxy", "  libreoffice-writer libroken18-heimdal librsvg2-2 librsvg2-common librtmp1", "  libruby2.1 libsane libsane-common libsmbclient libsndfile1 libsndfile1:i386", "  libsndfile1-dev libsolid4 libspice-server1 libsqlite3-0 libsrtp0 libss2", "  libssh-4 libssh-gcrypt-4 libssh2-1 libssl-dev libssl1.0.0 libssl1.0.0:i386", "  libsvn-perl libsvn1 libswscale3 libsyndication4 libsystemd0 libsystemd0:i386", "  libtalloc2 libtasn1-3-bin libtasn1-6 libtasn1-6:i386 libtasn1-bin libtdb1", "  libtevent0 libthreadweaver4 libtiff5 libtirpc1 libtre5 libudev-dev libudev1", "  libudev1:i386 libupnp6 libvirt0 libvlc5 libvlccore8 libvncclient0", "  libvncserver0 libwbclient0 libwind0-heimdal libwinpr-crt0.1", "  libwinpr-crypto0.1 libwinpr-dsparse0.1 libwinpr-environment0.1", "  libwinpr-file0.1 libwinpr-handle0.1 libwinpr-heap0.1 libwinpr-input0.1", "  libwinpr-interlocked0.1 libwinpr-library0.1 libwinpr-path0.1", "  libwinpr-pool0.1 libwinpr-registry0.1 libwinpr-rpc0.1 libwinpr-sspi0.1", "  libwinpr-synch0.1 libwinpr-sysinfo0.1 libwinpr-thread0.1 libwinpr-utils0.1", "  libwireshark-data libwireshark5 libwiretap4 libwmf0.2-7 libwsutil4", "  libxapian22 libxen-4.4 libxenstore3.0 libxerces-c3.1 libxml2 libxml2:i386", "  libxml2-dev libxml2-doc libxml2-utils libxpm-dev libxpm4 libxslt1.1", "  libytnef0 linux-libc-dev linux-libc-dev:i386 locales locales-all login", "  mariadb-client-10.0 mariadb-client-core-10.0 mariadb-common mariadb-server", "  mariadb-server-10.0 mariadb-server-core-10.0 multiarch-support myspell-en-us", "  mysql-common mythes-en-us nmap nscd ntp ntp-doc ntpdate openjdk-7-jdk", "  openjdk-7-jre openjdk-7-jre-headless openssh-client openssh-server", "  openssh-sftp-server openssl os-prober p7zip-full passwd perl perl-base", "  perl-doc perl-modules pidgin pidgin-data policykit-1 poppler-utils", "  python-crypto python-cryptography python-imaging python-imaging-tk", "  python-libxml2 python-pil python-pil-doc python-pil.imagetk", "  python-subversion python-talloc python2.7 python2.7-dev python2.7-doc", "  python2.7-minimal qemu qemu-system qemu-system-arm qemu-system-common", "  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-sparc", "  qemu-system-x86 qemu-user qemu-user-static qemu-utils quota rdesktop rpcbind", "  samba-libs sed sendmail sendmail-base sendmail-bin sendmail-cf sendmail-doc", "  sensible-mda subversion subversion-tools sudo systemd systemd-sysv tar", "  tcpdump tshark tzdata tzdata-java udev uno-libs3 unzip ure vim vim-common", "  vim-doc vim-gnome vim-gtk vim-gui-common vim-runtime vim-tiny vlc vlc-data", "  vlc-nox vlc-plugin-pulse vorbis-tools w3m wget wireshark wireshark-common", "  wpasupplicant xserver-common xserver-xorg-core xserver-xorg-dev xsltproc", "  xvfb xwayland", "588 upgraded, 4 newly installed, 1 to remove and 0 not upgraded.", "Need to get 35.6 MB/790 MB of archives.", "After this operation, 226 MB of additional disk space will be used.", "Get:1 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc6-i386 amd64 2.19-18+deb8u10 [2380 kB]", "Get:2 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc-dev-bin amd64 2.19-18+deb8u10 [238 kB]", "Get:3 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc6-dev amd64 2.19-18+deb8u10 [2003 kB]", "Get:4 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc6-dev-i386 amd64 2.19-18+deb8u10 [1319 kB]", "Get:5 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc6-dev-x32 amd64 2.19-18+deb8u10 [1587 kB]", "Get:6 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc6-x32 amd64 2.19-18+deb8u10 [2606 kB]", "Get:7 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc6-dbg amd64 2.19-18+deb8u10 [3431 kB]", "Get:8 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc-bin amd64 2.19-18+deb8u10 [1281 kB]", "Get:9 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc6 i386 2.19-18+deb8u10 [3983 kB]", "Get:10 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libc6 amd64 2.19-18+deb8u10 [4665 kB]", "Get:11 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libroken18-heimdal amd64 1.6~rc2+dfsg-9+deb8u1 [63.2 kB]", "Get:12 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libasn1-8-heimdal amd64 1.6~rc2+dfsg-9+deb8u1 [205 kB]", "Get:13 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libhcrypto4-heimdal amd64 1.6~rc2+dfsg-9+deb8u1 [110 kB]", "Get:14 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libheimbase1-heimdal amd64 1.6~rc2+dfsg-9+deb8u1 [51.8 kB]", "Get:15 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libwind0-heimdal amd64 1.6~rc2+dfsg-9+deb8u1 [71.5 kB]", "Get:16 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libhx509-5-heimdal amd64 1.6~rc2+dfsg-9+deb8u1 [131 kB]", "Get:17 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libkrb5-26-heimdal amd64 1.6~rc2+dfsg-9+deb8u1 [228 kB]", "Get:18 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libheimntlm0-heimdal amd64 1.6~rc2+dfsg-9+deb8u1 [38.7 kB]", "Get:19 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libgssapi3-heimdal amd64 1.6~rc2+dfsg-9+deb8u1 [118 kB]", "Get:20 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libxerces-c3.1 amd64 3.1.1-5.1+deb8u3 [865 kB]", "Get:21 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main multiarch-support amd64 2.19-18+deb8u10 [181 kB]", "Get:22 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main locales-all amd64 2.19-18+deb8u10 [3214 kB]", "Get:23 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main locales all 2.19-18+deb8u10 [3930 kB]", "Get:24 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main glibc-doc all 2.19-18+deb8u10 [2270 kB]", "Get:25 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libakonadiprotocolinternals1 amd64 1.13.0-2+deb8u2 [74.7 kB]", "Get:26 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libakonadi-kabc4 amd64 4:4.14.2-2+deb8u2 [18.2 kB]", "Get:27 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libkontactinterface4a amd64 4:4.14.2-2+deb8u2 [43.7 kB]", "Get:28 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libotr5 amd64 4.1.0-2+deb8u1 [85.3 kB]", "Get:29 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main libsyndication4 amd64 4:4.14.2-2+deb8u2 [205 kB]", "Get:30 http://linuxmirror.mathworks.com/open_source/Debian8/debian-security/ jessie/updates/main nscd amd64 2.19-18+deb8u10 [244 kB]", "Preconfiguring packages ...", "Fetched 35.6 MB in 3s (9732 kB/s)", "(Reading database ... ", "(Reading database ... 5%", "(Reading database ... 10%", "(Reading database ... 15%", "(Reading database ... 20%", "(Reading database ... 25%", "(Reading database ... 30%", "(Reading database ... 35%", "(Reading database ... 40%", "(Reading database ... 45%", "(Reading database ... 50%", "(Reading database ... 55%", "(Reading database ... 60%", "(Reading database ... 65%", "(Reading database ... 70%", "(Reading database ... 75%", "(Reading database ... 80%", "(Reading database ... 85%", "(Reading database ... 90%", "(Reading database ... 95%", "(Reading database ... 100%", "(Reading database ... 412816 files and directories currently installed.)", "Preparing to unpack .../login_1%3a4.2-3+deb8u4_amd64.deb ...", "Unpacking login (1:4.2-3+deb8u4) over (1:4.2-3+deb8u1) ...", "Processing triggers for man-db (2.7.0.2-5) ...", "Setting up login (1:4.2-3+deb8u4) ...", "(Reading database ... ", "(Reading database ... 5%", "(Reading database ... 10%", "(Reading database ... 15%", "(Reading database ... 20%", "(Reading database ... 25%", "(Reading database ... 30%", "(Reading database ... 35%", "(Reading database ... 40%", "(Reading database ... 45%", "(Reading database ... 50%", "(Reading database ... 55%", "(Reading database ... 60%", "(Reading database ... 65%", "(Reading database ... 70%", "(Reading database ... 75%", "(Reading database ... 80%", "(Reading database ... 85%", "(Reading database ... 90%", "(Reading database ... 95%", "(Reading database ... 100%", "(Reading database ... 412816 files and directories currently installed.)", "Preparing to unpack .../perl_5.20.2-3+deb8u8_amd64.deb ...", "Unpacking perl (5.20.2-3+deb8u8) over (5.20.2-3+deb8u3) ...", "Preparing to unpack .../libperl5.20_5.20.2-3+deb8u8_amd64.deb ...", "Unpacking libperl5.20 (5.20.2-3+deb8u8) over (5.20.2-3+deb8u3) ...", "Preparing to unpack .../perl-base_5.20.2-3+deb8u8_amd64.deb ...", "Unpacking perl-base (5.20.2-3+deb8u8) over (5.20.2-3+deb8u3) ...", "Processing triggers for man-db (2.7.0.2-5) ...", "Setting up perl-base (5.20.2-3+deb8u8) ...", "(Reading database ... ", "(Reading database ... 5%", "(Reading database ... 10%", "(Reading database ... 15%", "(Reading database ... 20%", "(Reading database ... 25%", "(Reading database ... 30%", "(Reading database ... 35%", "(Reading database ... 40%", "(Reading database ... 45%", "(Reading database ... 50%", "(Reading database ... 55%", "(Reading database ... 60%", "(Reading database ... 65%", "(Reading database ... 70%", "(Reading database ... 75%", "(Reading database ... 80%", "(Reading database ... 85%", "(Reading database ... 90%", "(Reading database ... 95%", "(Reading database ... 100%", "(Reading database ... 412817 files and directories currently installed.)", "Preparing to unpack .../perl-modules_5.20.2-3+deb8u8_all.deb ...", "Unpacking perl-modules (5.20.2-3+deb8u8) over (5.20.2-3+deb8u3) ...", "(Reading database ... ", "(Reading database ... 5%", "(Reading database ... 10%", "(Reading database ... 15%", "(Reading database ... 20%", "(Reading database ... 25%", "(Reading database ... 30%", "(Reading database ... 35%", "(Reading database ... 40%", "(Reading database ... 45%", "(Reading database ... 50%", "(Reading database ... 55%", "(Reading database ... 60%", "(Reading database ... 65%", "(Reading database ... 70%", "(Reading database ... 75%", "(Reading database ... 80%", "(Reading database ... 85%", "(Reading database ... 90%", "(Reading database ... 95%", "(Reading database ... 100%", "(Reading database ... 412818 files and directories currently installed.)", "Removing g1534733glibc (2.19-2) ...", "(Reading database ... ", "(Reading database ... 5%", "(Reading database ... 10%", "(Reading database ... 15%", "(Reading database ... 20%", "(Reading database ... 25%", "(Reading database ... 30%", "(Reading database ... 35%", "(Reading database ... 40%", "(Reading database ... 45%", "(Reading database ... 50%", "(Reading database ... 55%", "(Reading database ... 60%", "(Reading database ... 65%", "(Reading database ... 70%", "(Reading database ... 75%", "(Reading database ... 80%", "(Reading database ... 85%", "(Reading database ... 90%", "(Reading database ... 95%", "(Reading database ... 100%", "(Reading database ... 412818 files and directories currently installed.)", "Preparing to unpack .../libcomerr2_1.42.12-2+b1_amd64.deb ...", "Unpacking libcomerr2:amd64 (1.42.12-2+b1) over (1.42.12-1.1) ...", "Setting up libcomerr2:amd64 (1.42.12-2+b1) ...", "Processing triggers for libc-bin (2.19-18+deb8u7.tmw3) ...", "(Reading database ... ", "(Reading database ... 5%", "(Reading database ... 10%", "(Reading database ... 15%", "(Reading database ... 20%", "(Reading database ... 25%", "(Reading database ... 30%", "(Reading database ... 35%", "(Reading database ... 40%", "(Reading database ... 45%", "(Reading database ... 50%", "(Reading database ... 55%", "(Reading database ... 60%", "(Reading database ... 65%", "(Reading database ... 70%", "(Reading database ... 75%", "(Reading database ... 80%", "(Reading database ... 85%", "(Reading database ... 90%", "(Reading database ... 95%", "(Reading database ... 100%", "(Reading database ... 412819 files and directories currently installed.)", "Preparing to unpack .../libk5crypto3_1.12.1+dfsg-19+deb8u2_amd64.deb ...", "Unpacking libk5crypto3:amd64 (1.12.1+dfsg-19+deb8u2) over (1.12.1+dfsg-19+deb8u1) ...", "Preparing to unpack .../libgssapi-krb5-2_1.12.1+dfsg-19+deb8u2_amd64.deb ...", "Unpacking libgssapi-krb5-2:amd64 (1.12.1+dfsg-19+deb8u2) over (1.12.1+dfsg-19+deb8u1) ...", "Preparing to unpack .../krb5-user_1.12.1+dfsg-19+deb8u2_amd64.deb ...", "Unpacking krb5-user (1.12.1+dfsg-19+deb8u2) over (1.12.1+dfsg-19+deb8u1) ...", "Preparing to unpack .../libkrb5-3_1.12.1+dfsg-19+deb8u2_amd64.deb ...", "Unpacking libkrb5-3:amd64 (1.12.1+dfsg-19+deb8u2) over (1.12.1+dfsg-19+deb8u1) ...", "Preparing to unpack .../libkrb5support0_1.12.1+dfsg-19+deb8u2_amd64.deb ...", "Unpacking libkrb5support0:amd64 (1.12.1+dfsg-19+deb8u2) over (1.12.1+dfsg-19+deb8u1) ...", "Preparing to unpack .../libgssrpc4_1.12.1+dfsg-19+deb8u2_amd64.deb ...", "Unpacking libgssrpc4:amd64 (1.12.1+dfsg-19+deb8u2) over (1.12.1+dfsg-19+deb8u1) ...", "Preparing to unpack .../libkadm5clnt-mit9_1.12.1+dfsg-19+deb8u2_amd64.deb ...", "Unpacking libkadm5clnt-mit9:amd64 (1.12.1+dfsg-19+deb8u2) over (1.12.1+dfsg-19+deb8u1) ...", "Preparing to unpack .../libkdb5-7_1.12.1+dfsg-19+deb8u2_amd64.deb ...", "Unpacking libkdb5-7:amd64 (1.12.1+dfsg-19+deb8u2) over (1.12.1+dfsg-19+deb8u1) ...", "Preparing to unpack .../libkadm5srv-mit9_1.12.1+dfsg-19+deb8u2_amd64.deb ...", "Unpacking libkadm5srv-mit9:amd64 (1.12.1+dfsg-19+deb8u2) over (1.12.1+dfsg-19+deb8u1) ...", "Preparing to unpack .../libss2_1.42.12-2+b1_amd64.deb ...", "Unpacking libss2:amd64 (1.42.12-2+b1) over (1.42.12-1.1) ...", "Processing triggers for man-db (2.7.0.2-5) ...", "Setting up libss2:amd64 (1.42.12-2+b1) ...", "Processing triggers for libc-bin (2.19-18+deb8u7.tmw3) ...", "(Reading database ... ", "(Reading database ... 5%", "(Reading database ... 10%", "(Reading database ... 15%", "(Reading database ... 20%", "(Reading database ... 25%", "(Reading database ... 30%", "(Reading database ... 35%", "(Reading database ... 40%", "(Reading database ... 45%", "(Reading database ... 50%", "(Reading database ... 55%", "(Reading database ... 60%", "(Reading database ... 65%", "(Reading database ... 70%", "(Reading database ... 75%", "(Reading database ... 80%", "(Reading database ... 85%", "(Reading database ... 90%", "(Reading database ... 95%", "(Reading database ... 100%", "(Reading database ... 412820 files and directories currently installed.)", "Preparing to unpack .../libc6-i386_2.19-18+deb8u10_amd64.deb ...", "Unpacking libc6-i386 (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...", "Replaced by files in installed package libc6:i386 (2.19-18+deb8u7.tmw3) ...", "Preparing to unpack .../libc-dev-bin_2.19-18+deb8u10_amd64.deb ...", "Unpacking libc-dev-bin (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...", "Preparing to unpack .../libc6-dev_2.19-18+deb8u10_amd64.deb ...", "Unpacking libc6-dev:amd64 (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...", "Preparing to unpack .../libc6-dev-i386_2.19-18+deb8u10_amd64.deb ...", "Unpacking libc6-dev-i386 (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...", "Preparing to unpack .../libc6-dev-x32_2.19-18+deb8u10_amd64.deb ...", "Unpacking libc6-dev-x32 (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...", "Preparing to unpack .../libc6-x32_2.19-18+deb8u10_amd64.deb ...", "Unpacking libc6-x32 (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...", "Preparing to unpack .../libc6-dbg_2.19-18+deb8u10_amd64.deb ...", "Unpacking libc6-dbg:amd64 (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...", "Preparing to unpack .../rpcbind_0.2.1-6+deb8u2_amd64.deb ...", "Unpacking rpcbind (0.2.1-6+deb8u2) over (0.2.1-6+deb8u1) ...", "Preparing to unpack .../libc-bin_2.19-18+deb8u10_amd64.deb ...", "Unpacking libc-bin (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...", "Processing triggers for man-db (2.7.0.2-5) ...", "Processing triggers for systemd (215-17+deb8u3) ...", "Setting up libc-bin (2.19-18+deb8u10) ...", "(Reading database ... ", "(Reading database ... 5%", "(Reading database ... 10%", "(Reading database ... 15%", "(Reading database ... 20%", "(Reading database ... 25%", "(Reading database ... 30%", "(Reading database ... 35%", "(Reading database ... 40%", "(Reading database ... 45%", "(Reading database ... 50%", "(Reading database ... 55%", "(Reading database ... 60%", "(Reading database ... 65%", "(Reading database ... 70%", "(Reading database ... 75%", "(Reading database ... 80%", "(Reading database ... 85%", "(Reading database ... 90%", "(Reading database ... 95%", "(Reading database ... 100%", "(Reading database ... 412820 files and directories currently installed.)", "Preparing to unpack .../libc6_2.19-18+deb8u10_amd64.deb ...", "De-configuring libc6:i386 (2.19-18+deb8u7.tmw3) ...", "Unpacking libc6:amd64 (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...", "Preparing to unpack .../libc6_2.19-18+deb8u10_i386.deb ...", "Unpacking libc6:i386 (2.19-18+deb8u10) over (2.19-18+deb8u7.tmw3) ...", "Preparing to unpack .../libtirpc1_0.2.5-1+deb8u1_amd64.deb ...", "Unpacking libtirpc1:amd64 (0.2.5-1+deb8u1) over (0.2.5-1) ...", "Preparing to unpack .../linux-libc-dev_3.16.43-2+deb8u2_amd64.deb ...", "De-configuring linux-libc-dev:i386 (3.16.7-ckt20-1+deb8u2) ...", "Unpacking linux-libc-dev:amd64 (3.16.43-2+deb8u2) over (3.16.7-ckt20-1+deb8u2) ...", "Preparing to unpack .../linux-libc-dev_3.16.43-2+deb8u2_i386.deb ...", "Unpacking linux-libc-dev:i386 (3.16.43-2+deb8u2) over (3.16.7-ckt20-1+deb8u2) ...", "Processing triggers for man-db (2.7.0.2-5) ...", "Setting up libc6:amd64 (2.19-18+deb8u10) ...", "Setting up libc6:i386 (2.19-18+deb8u10) ...", "Processing triggers for libc-bin (2.19-18+deb8u10) ...", "(Reading database ... ", "(Reading database ... 5%", "(Reading database ... 10%", "(Reading database ... 15%", "(Reading database ... 20%", "(Reading database ... 25%", "(Reading database ... 30%", "(Reading database ... 35%", "(Reading database ... 40%", "(Reading database ... 45%", "(Reading database ... 50%", "(Reading database ... 55%", "(Reading database ... 60%", "(Reading database ... 65%", "(Reading database ... 70%", "(Reading database ... 75%", "(Reading database ... 80%", "(Reading database ... 85%", "(Reading database ... 90%", "(Reading database ... 95%", "(Reading database ... 100%", "(Reading database ... 412820 files and directories currently installed.)", "Preparing to unpack .../sed_4.2.2-4+deb8u1_amd64.deb ...", "Unpacking sed (4.2.2-4+deb8u1) over (4.2.2-4+b1) ...", "Processing triggers for man-db (2.7.0.2-5) ...", "Processing triggers for install-info (5.2.0.dfsg.1-6) ...", "Setting up sed (4.2.2-4+deb8u1) ...", "(Reading database ... ", "(Reading database ... 5%", "(Reading database ... 10%", "(Reading database ... 15%", "(Reading database ... 20%", "(Reading database ... 25%", "(Reading database ... 30%", "(Reading database ... 35%", "(Reading database ... 40%", "(Reading database ... 45%", "(Reading database ... 50%", "(Reading database ... 55%", "(Reading database ... 60%", "(Reading database ... 65%", "(Reading database ... 70%", "(Reading database ... 75%", "(Reading database ... 80%", "(Reading database ... 85%", "(Reading database ... 90%", "(Reading database ... 95%", "(Reading database ... 100%", "(Reading database ... 412820 files and directories currently installed.)", "Preparing to unpack .../tar_1.27.1-2+deb8u1_amd64.deb ...", "Unpacking tar (1.27.1-2+deb8u1) over (1.27.1-2+b1) ...", "Processing triggers for mime-support (3.58) ...", "Processing triggers for man-db (2.7.0.2-5) ...", "Setting up tar (1.27.1-2+deb8u1) ...", "(Reading database ... ", "(Reading database ... 5%", "(Reading database ... 10%", "(Reading database ... 15%", "(Reading database ... 20%", "(Reading database ... 25%", "(Reading database ... 30%", "(Reading database ... 35%", "(Reading database ... 40%", "(Reading database ... 45%", "(Reading database ... 50%", "(Reading database ... 55%", "(Reading database ... 60%", "(Reading database ... 65%", "(Reading database ... 70%", "(Reading database ... 75%", "(Reading database ... 80%", "(Reading database ... 85%", "(Reading database ... 90%", "(Reading database ... 95%", "(Reading database ... 100%", "(Reading database ... 412819 files and directories currently installed.)", "Preparing to unpack .../libapt-pkg4.12_1.0.9.8.4_amd64.deb ...", "Unpacking libapt-pkg4.12:amd64 (1.0.9.8.4) over (1.0.9.8.2) ...", "Setting up libapt-pkg4.12:amd64 (1.0.9.8.4) ...", "Processing triggers for libc-bin (2.19-18+deb8u10) ...", "(Reading database ... ", "(Reading database ... 5%", "(Reading database ... 10%", "(Reading database ... 15%", "(Reading database ... 20%", "(Reading database ... 25%", "(Reading database ... 30%", "(Reading database ... 35%", "(Reading database ... 40%", "(Reading database ... 45%", "(Reading database ... 50%", "(Reading database ... 55%", "(Reading database ... 60%", "(Reading database ... 65%", "(Reading database ... 70%", "(Reading database ... 75%", "(Reading database ... 80%", "(Reading database ... 85%", "(Reading database ... 90%", "(Reading database ... 95%", "(Reading database ... 100%", "(Reading database ... 412819 files and directories currently installed.)", "Preparing to unpack .../gpgv_1.4.18-7+deb8u3_amd64.deb ...", "Unpacking gpgv (1.4.18-7+deb8u3) over (1.4.18-7) ...", "Processing triggers for man-db (2.7.0.2-5) ...", "Setting up gpgv (1.4.18-7+deb8u3) ...", "(Reading database ... ", "(Reading database ... 5%", "(Reading database ... 10%", "(Reading database ... 15%", "(Reading database ... 20%", "(Reading database ... 25%", "(Reading database ... 30%", "(Reading database ... 35%", "(Reading database ... 40%", "(Reading database ... 45%", "(Reading database ... 50%", "(Reading database ... 55%", "(Reading database ... 60%", "(Reading database ... 65%", "(Reading database ... 70%", "(Reading database ... 75%", "(Reading database ... 80%", "(Reading database ... 85%", "(Reading database ... 90%", "(Reading database ... 95%", "(Reading database ... 100%", "(Reading database ... 412819 files and directories currently installed.)", "Preparing to unpack .../debian-archive-keyring_2017.5~deb8u1_all.deb ...", "Unpacking debian-archive-keyring (2017.5~deb8u1) over (2014.3) ...", "Setting up debian-archive-keyring (2017.5~deb8u1) ...", "Removing obsolete conffile /etc/apt/trusted.gpg.d/debian-archive-squeeze-automatic.gpg ...", "Removing obsolete conffile /etc/apt/trusted.gpg.d/debian-archive-squeeze-stable.gpg ...", "(Reading database ... ", "(Reading database ... 5%", "(Reading database ... 10%", "(Reading database ... 15%", "(Reading database ... 20%", "(Reading database ... 25%", "(Reading database ... 30%", "(Reading database ... 35%", "(Reading database ... 40%", "(Reading database ... 45%", "(Reading database ... 50%", "(Reading database ... 55%", "(Reading database ... 60%", "(Reading database ... 65%", "(Reading database ... 70%", "(Reading database ... 75%", "(Reading database ... 80%", "(Reading database ... 85%", "(Reading database ... 90%", "(Reading database ... 95%", "(Reading database ... 100%", "(Reading database ... 412820 files and directories currently installed.)", "Preparing to unpack .../gnupg_1.4.18-7+deb8u3_amd64.deb ...", "Unpacking gnupg (1.4.18-7+deb8u3) over (1.4.18-7) ...", "Processing triggers for man-db (2.7.0.2-5) ...", "Processing triggers for install-info (5.2.0.dfsg.1-6) ...", "Setting up gnupg (1.4.18-7+deb8u3) ...", "(Reading database ... ", "(Reading database ... 5%", "(Reading database ... 10%", "(Reading database ... 15%", "(Reading database ... 20%", "(Reading database ... 25%", "(Reading database ... 30%", "(Reading database ... 35%", "(Reading database ... 40%", "(Reading database ... 45%", "(Reading database ... 50%", "(Reading database ... 55%", "(Reading database ... 60%", "(Reading database ... 65%", "(Reading database ... 70%", "(Reading database ... 75%", "(Reading database ... 80%", "(Reading database ... 85%", "(Reading database ... 90%", "(Reading database ... 95%", "(Reading database ... 100%", "(Reading database ... 412820 files and directories currently installed.)", "Preparing to unpack .../apt_1.0.9.8.4_amd64.deb ...", "Unpacking apt (1.0.9.8.4) over (1.0.9.8.2) ...", "Processing triggers for man-db (2.7.0.2-5) ...", "Setting up apt (1.0.9.8.4) ...", "Processing triggers for libc-bin (2.19-18+deb8u10) ...", "(Reading database ... ", "(Reading database ... 5%", "(Reading database ... 10%", "(Reading database ... 15%", "(Reading database ... 20%", "(Reading database ... 25%", "(Reading database ... 30%", "(Reading database ... 35%", "(Reading database ... 40%", "(Reading database ... 45%", "(Reading database ... 50%", "(Reading database ... 55%", "(Reading database ... 60%", "(Reading database ... 65%", "(Reading database ... 70%", "(Reading database ... 75%", "(Reading database ... 80%", "(Reading database ... 85%", "(Reading database ... 90%", "(Reading database ... 95%", "(Reading database ... 100%", "(Reading database ... 412820 files and directories currently installed.)", "Preparing to unpack .../libudev1_215-17+deb8u7_amd64.deb ...", "De-configuring libudev1:i386 (215-17+deb8u3) ...", "Unpacking libudev1:amd64 (215-17+deb8u7) over (215-17+deb8u3) ...", "Preparing to unpack .../libudev1_215-17+deb8u7_i386.deb ...", "Unpacking libudev1:i386 (215-17+deb8u7) over (215-17+deb8u3) ...", "Preparing to unpack .../udev_215-17+deb8u7_amd64.deb ...", "Unpacking udev (215-17+deb8u7) over (215-17+deb8u3) ...", "Processing triggers for man-db (2.7.0.2-5) ...", "Processing triggers for systemd (215-17+deb8u3) ...", "Setting up libudev1:amd64 (215-17+deb8u7) ...", "Setting up libudev1:i386 (215-17+deb8u7) ...", "Setting up udev (215-17+deb8u7) ...", "addgroup: The group `input' already exists as a system group. Exiting.", "update-initramfs: deferring update (trigger activated)", "Processing triggers for libc-bin (2.19-18+deb8u10) ...", "Processing triggers for initramfs-tools (0.120) ...", "update-initramfs: Generating /boot/initrd.img-4.4.0-0.bpo.tmw1-amd64", "(Reading database ... ", "(Reading database ... 5%", "(Reading database ... 10%", "(Reading database ... 15%", "(Reading database ... 20%", "(Reading database ... 25%", "(Reading database ... 30%", "(Reading database ... 35%", "(Reading database ... 40%", "(Reading database ... 45%", "(Reading database ... 50%", "(Reading database ... 55%", "(Reading database ... 60%", "(Reading database ... 65%", "(Reading database ... 70%", "(Reading database ... 75%", "(Reading database ... 80%", "(Reading database ... 85%", "(Reading database ... 90%", "(Reading database ... 95%", "(Reading database ... 100%", "(Reading database ... 412820 files and directories currently installed.)", "Preparing to unpack .../libudev-dev_215-17+deb8u7_amd64.deb ...", "Unpacking libudev-dev:amd64 (215-17+deb8u7) over (215-17+deb8u3) ...", "Preparing to unpack .../initramfs-tools_0.120+deb8u3_all.deb ...", "Unpacking initramfs-tools (0.120+deb8u3) over (0.120) ...", "Preparing to unpack .../libsystemd0_215-17+deb8u7_amd64.deb ...", "De-configuring libsystemd0:i386 (215-17+deb8u3) ...", "Unpacking libsystemd0:amd64 (215-17+deb8u7) over (215-17+deb8u3) ...", "Preparing to unpack .../libsystemd0_215-17+deb8u7_i386.deb ...", "Unpacking libsystemd0:i386 (215-17+deb8u7) over (215-17+deb8u3) ...", "Preparing to unpack .../systemd_215-17+deb8u7_amd64.deb ...", "Unpacking systemd (215-17+deb8u7) over (215-17+deb8u3) ...", "Processing triggers for man-db (2.7.0.2-5) ...", "Processing triggers for dbus (1.8.20-0+deb8u1) ...", "Setting up libsystemd0:amd64 (215-17+deb8u7) ...", "Setting up libsystemd0:i386 (215-17+deb8u7) ...", "Setting up systemd (215-17+deb8u7) ...", "addgroup: The group `systemd-journal' already exists as a system group. Exiting.", "adduser: The user `systemd-timesync' already exists. Exiting.", "dpkg: error processing package systemd (--configure):", " subprocess installed post-installation script returned error exit status 1", "Processing triggers for libc-bin (2.19-18+deb8u10) ...", "Errors were encountered while processing:", " systemd"]}
+2017-08-09 22:30:55,516 p=513 u=root |  	to retry, use: --limit @/root/debian_bootstrap/debian8_new_machine_upgrade.retry
+
+2017-08-09 22:30:55,516 p=513 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:30:55,517 p=513 u=root |  localhost                  : ok=1    changed=0    unreachable=0    failed=1   
+2017-08-09 22:35:05,369 p=22662 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:35:05,383 p=22662 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:35:06,168 p=22662 u=root |  ok: [localhost]
+2017-08-09 22:35:06,173 p=22662 u=root |  TASK [Ensure_User_systemd-timesync_Does_Not_Exist_Because_Systemd_Sucks] *******
+2017-08-09 22:35:06,467 p=22662 u=root |  fatal: [localhost]: FAILED! => {"changed": false, "failed": true, "msg": "missing required arguments: name"}
+2017-08-09 22:35:06,468 p=22662 u=root |  	to retry, use: --limit @/root/debian_bootstrap/debian8_new_machine_upgrade.retry
+
+2017-08-09 22:35:06,468 p=22662 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:35:06,469 p=22662 u=root |  localhost                  : ok=1    changed=0    unreachable=0    failed=1   
+2017-08-09 22:35:35,129 p=22852 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:35:35,143 p=22852 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:35:35,892 p=22852 u=root |  ok: [localhost]
+2017-08-09 22:35:35,897 p=22852 u=root |  TASK [Ensure_User_systemd-timesync_Does_Not_Exist_Because_Systemd_Sucks] *******
+2017-08-09 22:35:36,874 p=22852 u=root |  changed: [localhost]
+2017-08-09 22:35:36,877 p=22852 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:35:36,877 p=22852 u=root |  localhost                  : ok=2    changed=1    unreachable=0    failed=0   
+2017-08-09 22:35:39,244 p=22950 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:35:39,259 p=22950 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:35:40,073 p=22950 u=root |  ok: [localhost]
+2017-08-09 22:35:40,078 p=22950 u=root |  TASK [Ensure_User_systemd-timesync_Does_Not_Exist_Because_Systemd_Sucks] *******
+2017-08-09 22:35:40,401 p=22950 u=root |  ok: [localhost]
+2017-08-09 22:35:40,402 p=22950 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:35:40,402 p=22950 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2017-08-09 22:36:16,748 p=23889 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:36:16,762 p=23889 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:36:17,494 p=23889 u=root |  ok: [localhost]
+2017-08-09 22:36:17,496 p=23889 u=root |  TASK [Ensure_User_systemd-timesync_Does_Not_Exist_Because_Systemd_Sucks] *******
+2017-08-09 22:36:18,327 p=23889 u=root |  ok: [localhost]
+2017-08-09 22:36:18,332 p=23889 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:36:18,375 p=23889 u=root |  ok: [localhost] => {
+    "out_user_systemd-timesync": "VARIABLE IS NOT DEFINED!"
+}
+2017-08-09 22:36:18,378 p=23889 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:36:18,378 p=23889 u=root |  localhost                  : ok=3    changed=0    unreachable=0    failed=0   
+2017-08-09 22:36:31,950 p=24029 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:36:31,963 p=24029 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:36:32,742 p=24029 u=root |  ok: [localhost]
+2017-08-09 22:36:32,745 p=24029 u=root |  TASK [Ensure_User_systemd-timesync_Does_Not_Exist_Because_Systemd_Sucks] *******
+2017-08-09 22:36:33,069 p=24029 u=root |  ok: [localhost]
+2017-08-09 22:36:33,074 p=24029 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:36:33,104 p=24029 u=root |  ok: [localhost] => {
+    "out_user_systemd_timesync": {
+        "changed": false, 
+        "name": "systemd-timesync", 
+        "state": "absent"
+    }
+}
+2017-08-09 22:36:33,107 p=24029 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:36:33,107 p=24029 u=root |  localhost                  : ok=3    changed=0    unreachable=0    failed=0   
+2017-08-09 22:36:40,317 p=24142 u=root |  PLAY [all] *********************************************************************
+2017-08-09 22:36:40,331 p=24142 u=root |  TASK [setup] *******************************************************************
+2017-08-09 22:36:41,114 p=24142 u=root |  ok: [localhost]
+2017-08-09 22:36:41,117 p=24142 u=root |  TASK [Ensure_User_systemd-timesync_Does_Not_Exist_Because_Systemd_Sucks] *******
+2017-08-09 22:36:41,458 p=24142 u=root |  ok: [localhost]
+2017-08-09 22:36:41,462 p=24142 u=root |  TASK [debug] *******************************************************************
+2017-08-09 22:36:41,490 p=24142 u=root |  ok: [localhost] => {
+    "out_user_systemd_timesync": {
+        "changed": false, 
+        "name": "systemd-timesync", 
+        "state": "absent"
+    }
+}
+2017-08-09 22:36:41,492 p=24142 u=root |  TASK [Upgrade_Debian8] *********************************************************
+2017-08-09 22:36:49,468 p=24142 u=root |  fatal: [localhost]: FAILED! => {"changed": false, "failed": true, "msg": "'/usr/bin/apt-get dist-upgrade' failed: E: Unmet dependencies. Try using -f.\n", "stdout": "Reading package lists...\nBuilding dependency tree...\nReading state information...\nYou might want to run 'apt-get -f install' to correct these.\nThe following packages have unmet dependencies:\n libpam-systemd : Depends: systemd (= 215-17+deb8u3)\n systemd-sysv : Depends: systemd (= 215-17+deb8u3)\n", "stdout_lines": ["Reading package lists...", "Building dependency tree...", "Reading state information...", "You might want to run 'apt-get -f install' to correct these.", "The following packages have unmet dependencies:", " libpam-systemd : Depends: systemd (= 215-17+deb8u3)", " systemd-sysv : Depends: systemd (= 215-17+deb8u3)"]}
+2017-08-09 22:36:49,469 p=24142 u=root |  	to retry, use: --limit @/root/debian_bootstrap/debian8_new_machine_upgrade.retry
+
+2017-08-09 22:36:49,470 p=24142 u=root |  PLAY RECAP *********************************************************************
+2017-08-09 22:36:49,470 p=24142 u=root |  localhost                  : ok=3    changed=0    unreachable=0    failed=1   
