@@ -6,7 +6,7 @@ CRUFT_CLEAN     = xargs --no-run-if-empty rm -v
 BLANK_LINE = echo ""
 
 default :
-	@echo biteme
+	ansible --version
 
 clean :
 	${BLANK_LINE} ; ${CRUFT_ENUMERATE} | ${CRUFT_WARN}
