@@ -42,8 +42,19 @@
           dist
       register:
         out_upgrade
-
     - debug:
         var:
           out_upgrade
 
+    -  debug:
+        msg: 
+          "boo: https://github.com/ansible/ansible-modules-core/issues/4029"
+    - name:
+        Remove_Automatically_Installed_Dependencies
+      shell:
+        apt-get -y autoremove
+      register:
+        out_autoremove
+    - debug:
+        var:
+          out_autoremove

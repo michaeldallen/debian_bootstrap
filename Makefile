@@ -1,5 +1,5 @@
-
-CRUFT_ENUMERATE = find * -name '*~' -o -name '*.retry'
+ANSIBLE_LOG     = ansible.log
+CRUFT_ENUMERATE = find * -name '*~' -o -name '*.retry' -o -name '${ANSIBLE_LOG}'
 CRUFT_WARN      = while read t ; do echo planning to gun down "'$${t}'" ; done
 CRUFT_CLEAN     = xargs --no-run-if-empty rm -v
 
@@ -16,4 +16,5 @@ really_clean clean!:
 
 
 doit :
+	@touch ${ANSIBLE_LOG}
 	ansible-playbook -i 'localhost,' --connection=local debian8_new_machine_upgrade.yml 
