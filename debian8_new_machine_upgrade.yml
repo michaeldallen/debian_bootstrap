@@ -19,6 +19,38 @@
         var:
           out_upgrade
 
+
+    - name:
+        Force_Fix_To_Workaround_Systemd_Suckiness
+      become:
+        true
+      shell:
+        apt-get --fix-broken install
+      register:
+        out_fix
+    - debug:
+        var:
+          out_fix
+
+
+    - name:
+        Upgrade_Debian8_again
+      become:
+        true
+      apt:
+        update_cache:
+          yes
+        upgrade:
+          dist
+      register:
+        out_upgrade_again
+    - debug:
+        var:
+          out_upgrade_again
+
+
+
+
     -  debug:
         msg: 
           "boo: https://github.com/ansible/ansible-modules-core/issues/4029"
@@ -33,3 +65,5 @@
     - debug:
         var:
           out_autoremove
+
+
