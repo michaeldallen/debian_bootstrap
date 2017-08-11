@@ -5,35 +5,6 @@
   tasks:
 
     - name:
-        Ensure_User_systemd-timesync_Does_Not_Exist_Because_Systemd_Sucks
-      user:
-        name:
-          systemd-timesync
-        state:
-          absent
-      register:
-        out_user_systemd_timesync
-
-    - debug:
-        var:
-          out_user_systemd_timesync
-
-    - name:
-        Ensure_Group_systemd-journal_Does_Not_Exist_Because_Systemd_Sucks
-      user:
-        name:
-          systemd-timesync
-        state:
-          absent
-      register:
-        out_user_systemd_timesync
-
-    - debug:
-        var:
-          out_user_systemd_timesync
-
-
-    - name:
         Upgrade_Debian8
       become:
         true
