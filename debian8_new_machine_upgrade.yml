@@ -35,6 +35,8 @@
 
     - name:
         Upgrade_Debian8
+      become:
+        true
       apt:
         update_cache:
           yes
@@ -51,6 +53,8 @@
           "boo: https://github.com/ansible/ansible-modules-core/issues/4029"
     - name:
         Remove_Automatically_Installed_Dependencies
+      become:
+        true
       shell:
         apt-get -y autoremove
       register:
