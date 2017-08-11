@@ -17,4 +17,4 @@ really_clean clean!:
 
 doit :
 	@touch ${ANSIBLE_LOG}
-	ansible-playbook -i 'localhost,' --connection=local debian8_new_machine_upgrade.yml 
+	ansible-playbook -i 'localhost,' --connection=local debian8_new_machine_upgrade.yml || ansible-playbook -i 'localhost,' --connection=local debian8_new_machine_upgrade.yml 

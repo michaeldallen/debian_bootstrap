@@ -3,7 +3,7 @@
     all
 
   tasks:
-
+  - block:
     - name:
         Upgrade_Debian8
       become:
@@ -20,12 +20,26 @@
           out_upgrade
 
 
+    rescue:
+    - debug:
+        msg="rescue attempt - need to turn off '-e' in /var/lib/dpkg/info/systemd.postinst"
     - name:
-        Force_Fix_To_Workaround_Systemd_Suckiness
+        Remove_set-e
+      become:
+        true
+      lineinfile:
+        dest:
+          /var/lib/dpkg/info/systemd.postinst
+        state:
+          absent
+        regexp:
+          'set *-e'
+    - name:
+        Fix_Broken
       become:
         true
       shell:
-        apt-get --fix-broken install
+        apt-get --fix-broken --assume-yes install
       register:
         out_fix
     - debug:
@@ -33,37 +47,20 @@
           out_fix
 
 
-    - name:
-        Upgrade_Debian8_again
-      become:
-        true
-      apt:
-        update_cache:
-          yes
-        upgrade:
-          dist
-      register:
-        out_upgrade_again
-    - debug:
-        var:
-          out_upgrade_again
 
-
-
-
-    -  debug:
-        msg: 
-          "boo: https://github.com/ansible/ansible-modules-core/issues/4029"
-    - name:
-        Remove_Automatically_Installed_Dependencies
-      become:
-        true
-      shell:
-        apt-get -y autoremove
-      register:
+  -  debug:
+      msg: 
+        "boo: https://github.com/ansible/ansible-modules-core/issues/4029"
+  - name:
+      Remove_Automatically_Installed_Dependencies
+    become:
+      true
+    shell:
+      apt-get -y autoremove
+    register:
+      out_autoremove
+  - debug:
+      var:
         out_autoremove
-    - debug:
-        var:
-          out_autoremove
 
 
