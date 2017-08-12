@@ -64,3 +64,13 @@
         out_autoremove
 
 
+  - name:
+      Install_Mallen_Packages
+    become:
+      true
+    apt:
+      name: keepass2
+    apt: 
+      name: keepass2-doc
+      
+  
