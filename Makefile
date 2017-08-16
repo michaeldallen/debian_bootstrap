@@ -6,7 +6,8 @@ CRUFT_CLEAN     = xargs --no-run-if-empty rm -v
 BLANK_LINE = echo ""
 
 default :
-	ansible --version
+	@echo "ansible: `ansible --version`"
+	@echo "try one of these:" && for tgt in clean really_clean bootstrap software ; do echo "    make $${tgt}" ; done
 
 clean :
 	${BLANK_LINE} ; ${CRUFT_ENUMERATE} | ${CRUFT_WARN}
@@ -15,6 +16,10 @@ really_clean clean!:
 	${BLANK_LINE} ; ${CRUFT_ENUMERATE} | ${CRUFT_CLEAN}
 
 
-doit :
+bootstrap :
 	@touch ${ANSIBLE_LOG}
-	ansible-playbook -i 'localhost,' --connection=local debian8_new_machine_upgrade.yml || ansible-playbook -i 'localhost,' --connection=local debian8_new_machine_upgrade.yml 
+	ansible-playbook -i 'localhost,' --connection=local debian8_bootstrap.yml || ansible-playbook -i 'localhost,' --connection=local debian8_bootstrap.yml 
+
+software :
+	@touch ${ANSIBLE_LOG}
+	ansible-playbook -i 'localhost,' --connection=local debian8_software.yml

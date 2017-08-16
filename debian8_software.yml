@@ -1,0 +1,22 @@
+---
+- hosts:
+    all
+
+  tasks:
+  - name:
+      Install_Mallen_Debian8_Packages
+    become:
+      true
+    apt:
+      update_cache:
+        yes
+      name:
+        "{{ item }}"
+      state:
+        present
+    with_items:
+      - keepass2
+      - keepass2-doc
+      - jekyll
+      
+  
