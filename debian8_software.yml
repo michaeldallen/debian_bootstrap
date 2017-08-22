@@ -15,8 +15,10 @@
       state:
         present
     with_items:
+      - bundler
+      - jekyll
       - keepass2
       - keepass2-doc
-      - jekyll
+      - pandoc
       
   
