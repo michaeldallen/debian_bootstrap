@@ -20,6 +20,7 @@
       - keepass2
       - keepass2-doc
       - pandoc
+      - pavucontrol
       - texlive-latex-base
       - texlive-fonts-recommended
       
