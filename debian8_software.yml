@@ -21,6 +21,7 @@
       - keepass2-doc
       - keychain
       - pandoc
+      - pavucontrol
       - pinentry-tty
       - texlive-latex-base
       - texlive-fonts-recommended
