@@ -19,6 +19,7 @@
       - jekyll
       - keepass2
       - keepass2-doc
+      - keychain
       - pandoc
       - texlive-latex-base
       - texlive-fonts-recommended
