@@ -16,6 +16,7 @@
         present
     with_items:
       - bundler
+      - dosfstools
       - jekyll
       - keepass2
       - keepass2-doc
@@ -25,5 +26,3 @@
       - pinentry-tty
       - texlive-latex-base
       - texlive-fonts-recommended
-      
-  
